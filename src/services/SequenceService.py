@@ -4,19 +4,19 @@ from ..models.Sequence import Sequence
 class SequenceService:
 
     def __init__(self):
-        self.sequence = Sequence()
+        self.sequence_manager = Sequence()
         # self.sequence_history = SequenceHistory()
 
     def get_sequence(self, str_representation):
-        self.sequence.set_sequence(str_representation)
+        self.sequence_manager.set_sequence(str_representation)
 
-        if self.sequence.is_valid():
+        if self.sequence_manager.is_valid():
             pass
         else:
-            raise Exception
+            raise Exception 
 
     def process_sequence(self):
-        sequence = self.sequence.get_sequence_as_str()
+        sequence = self.sequence_manager.get_sequence_as_str()
 
         # print("sequence = " + sequence)
 

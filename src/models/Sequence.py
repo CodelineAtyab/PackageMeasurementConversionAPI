@@ -5,7 +5,7 @@ class Sequence:
         self.sequence = ""
 
     def set_sequence(self, sequence):
-        self.value = sequence
+        self.sequence = sequence
 
     def get_sequence_as_str(self):
         return str(self.sequence)
