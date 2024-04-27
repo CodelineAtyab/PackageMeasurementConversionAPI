@@ -1,6 +1,6 @@
 import cherrypy
 
-from src.services.SequenceService import SequenceService
+from ..services import SequenceService
 
 
 service = SequenceService()

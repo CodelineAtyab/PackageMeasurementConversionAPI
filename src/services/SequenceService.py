@@ -1,4 +1,4 @@
-from src.models.Sequence import Sequence
+from ..models import Sequence
 
 sequence = Sequence()
 
