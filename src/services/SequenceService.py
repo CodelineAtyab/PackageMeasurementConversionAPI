@@ -1,23 +1,26 @@
-from ..models import Sequence
+from ..models.Sequence import Sequence
 
-sequence = Sequence()
 
 class SequenceService:
-    # def __init__(self):
-    #     self.sequence_history = SequenceHistory()
+
+    def __init__(self):
+        self.sequence = Sequence()
+        # self.sequence_history = SequenceHistory()
 
     def get_sequence(self, str_representation):
-        sequence.set_value(str_representation)
+        self.sequence.set_value(str_representation)
 
-        if sequence.is_valid():
+        if self.sequence.is_valid():
             pass
         else:
             raise Exception
 
-    def process_sequence(self, sequence = sequence.get_value_as_str()):
+    def process_sequence(self):
+        sequence = self.sequence.get_value_as_str()
+
         # print("sequence = " + sequence)
 
-        sequence = "aa" # [1]
+        # sequence = "aa" # [1]
         # sequence = "abbcc" # [2, 6]
         # sequence = "dz_a_aazzaaa" # [28, 53, 1]
         # sequence = "a_" # [0]
