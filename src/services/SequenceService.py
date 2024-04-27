@@ -8,7 +8,7 @@ class SequenceService:
         # self.sequence_history = SequenceHistory()
 
     def get_sequence(self, str_representation):
-        self.sequence.set_value(str_representation)
+        self.sequence.set_sequence(str_representation)
 
         if self.sequence.is_valid():
             pass
@@ -16,7 +16,7 @@ class SequenceService:
             raise Exception
 
     def process_sequence(self):
-        sequence = self.sequence.get_value_as_str()
+        sequence = self.sequence.get_sequence_as_str()
 
         # print("sequence = " + sequence)
 
