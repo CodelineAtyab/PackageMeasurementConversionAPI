@@ -24,13 +24,13 @@ class Sequence:
         index = 0
         is_counting = False
         while index < len(sequence):
-            if is_counting:
+            if is_counting: # IF in the middle of cycle
                 steps = steps - 1
                 if sequence[index] == 'z':
                     steps = steps + 1
                 if steps == 0:
                     is_counting = False
-            else:
+            else: # IF at the start of cycle
                 steps = self.encoder(sequence[index])
                 if sequence[index] == 'z':
                         steps = steps + self.encoder(sequence[index + 1])
@@ -42,32 +42,7 @@ class Sequence:
 
             index += 1
 
-        # Probably where the validation bug is
         if steps == 0:
             return True
         else:
             return False
-
-
-
-
-
-
-
-
-
-        # value = "aa" # [1]
-        # value = "abbcc" # [2, 6]
-        # value = "dz_a_aazzaaa" # [28, 53, 1]
-        # value = "a_" # [0]
-        # value = "abcdabcdab" # [2, 7, 7]
-        # value = "abcdabcdab_" # [2, 7, 7, 0]
-        # value = "zdaaaaaaaabaaaaaaaabaaaaaaaabbaa" # [34]
-        # value = "zza_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_" # [26]
-        # value = "za_a_a_a_a_a_a_a_a_a_a_a_a_azaaa"  # [40, 1]
-
-        # value = "_"  # [0]
-        # value = "_ad"  # [0]
-        # value = "a_"  # [0]
-        # value = "_zzzb"  # [0]
-        # value = "__________"  # [0]

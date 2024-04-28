@@ -5,6 +5,7 @@ class SequenceService:
 
     def __init__(self):
         self.sequence_manager = Sequence()
+        self.result = []
         # self.sequence_history = SequenceHistory()
 
     def get_sequence(self, str_representation):
@@ -13,34 +14,15 @@ class SequenceService:
         if self.sequence_manager.is_valid():
             pass
         else:
-            raise Exception 
+            raise Exception("INVALID SEQUENCE") 
+        
+    def append_num_to_list(self, number):
+        self.result.append(number)
+        return self.result
 
     def process_sequence(self):
         sequence = self.sequence_manager.get_sequence_as_str()
-
-        # print("sequence = " + sequence)
-
-        # sequence = "aa" # [1]
-        # sequence = "abbcc" # [2, 6]
-        # sequence = "dz_a_aazzaaa" # [28, 53, 1]
-        # sequence = "a_" # [0]
-        # sequence = "abcdabcdab" # [2, 7, 7]
-        # sequence = "abcdabcdab_" # [2, 7, 7, 0]
-        # sequence = "zdaaaaaaaabaaaaaaaabaaaaaaaabbaa" # [34]
-        # sequence = "zza_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_" # [26]
-        # sequence = "za_a_a_a_a_a_a_a_a_a_a_a_a_azaaa"  # [40, 1]
-
-        # sequence = "_"  # [0]
-        # sequence = "_ad"  # [0]
-        # sequence = "a_"  # [0]
-        # sequence = "_zzzb"  # [0]
-        # sequence = "__________"  # [0]
-
-        # Special Case
-        if sequence[0] == "_":
-            return [0]
-        
-        output = []
+        self.result = []
         index = 0
         is_counting = False
         while index < len(sequence):
@@ -52,18 +34,18 @@ class SequenceService:
                         sum = sum + self.sequence_manager.encoder(sequence[index])
                         steps -= 1
                         if (index + 1) == len(sequence):
-                            output.append(sum)
+                            self.append_num_to_list(sum)
                 else:
                     if steps == 0:
                         index -= 1
-                    output.append(sum)
+                    self.append_num_to_list(sum)
                     is_counting = False
             else:
                 sum = 0
                 steps = self.sequence_manager.encoder(sequence[index])
 
                 if steps == 0 and index + 1 == len(sequence):
-                    output.append(sum)
+                    self.append_num_to_list(sum)
                 else:
                     if sequence[index] == 'z':
                         steps = steps + self.sequence_manager.encoder(sequence[index + 1])
@@ -74,4 +56,4 @@ class SequenceService:
                     is_counting = True
             index += 1
 
-        return output
+        return self.result
