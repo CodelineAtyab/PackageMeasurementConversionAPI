@@ -1,8 +1,3 @@
-.idea/
-*.png
-*.jpg
-*.gif
-*.txt
-*.csv
-*.pdf
+*.log
+*.db
 **/__pycache__/

@@ -4,6 +4,7 @@ class Sequence:
     def __init__(self):
         self.sequence = ""
 
+
     def set_sequence(self, sequence):
         self.sequence = sequence
 

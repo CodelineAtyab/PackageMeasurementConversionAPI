@@ -1,12 +1,14 @@
 from ..models.Sequence import Sequence
+from ..services.SequenceHistory import SequenceHistory
 
 
 class SequenceService:
 
     def __init__(self):
         self.sequence_manager = Sequence()
+        self.sequence_history = SequenceHistory()
         self.result = []
-        # self.sequence_history = SequenceHistory()
+
 
     def get_sequence(self, str_representation):
         self.sequence_manager.set_sequence(str_representation)
