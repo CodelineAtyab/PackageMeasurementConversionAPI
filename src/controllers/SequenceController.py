@@ -15,14 +15,14 @@ class SequenceRecordsV1():
         Handles the GET request and return a JSON response.
         """
 
+        # self.sequence_service.get_sequence(input)
+        # res_msg = {"status": "success", "err_msg": "", "result": self.sequence_service.process_sequence()}
 
-        self.sequence_service.get_sequence(input)
-        res_msg = {"status": "success", "err_msg": "", "result": self.sequence_service.process_sequence()}
-        # try:
-        #     self.get_sequence(input)
-        #     res_msg = {"status": "success", "err_msg": "", "result": self.process_sequence()}
-        # except:
-        #     res_msg = {"status": "fail", "err_msg": "invalid sequence", "result": []}
+        try:
+            self.sequence_service.get_sequence(input)
+            res_msg = {"status": "success", "err_msg": "", "result": self.sequence_service.process_sequence()}
+        except:
+            res_msg = {"status": "fail", "err_msg": "invalid sequence", "result": []}
 
 
         return res_msg

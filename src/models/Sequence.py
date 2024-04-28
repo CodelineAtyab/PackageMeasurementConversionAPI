@@ -42,7 +42,7 @@ class Sequence:
 
             index += 1
 
-
+        # Probably where the validation bug is
         if steps == 0:
             return True
         else:
