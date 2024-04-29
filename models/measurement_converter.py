@@ -1,5 +1,3 @@
-# from measurement_converter_db import save_to_history
-
 class MeasurementConverter:
     def __init__(self, string=None):
         self.string = string
@@ -71,20 +69,3 @@ class MeasurementConverter:
         except:
             return "Invalid string input"
         return result
-
-# Test cases
-# mc = MeasurementConverter() 
-# print(mc.pmc("dz_a_aazzaaa"))  # Output: [28, 53, 1]
-# print(mc.pmc("za_a_a_a_a_a_a_a_a_a_a_a_a_azaaa"))  # Output: [40, 1]
-# print(mc.pmc("aa"))  # Output: [1]
-# print(mc.pmc("abbcc"))  # Output: [2, 6]
-# print(mc.pmc("a_"))  # Output: [0]
-# print(mc.pmc("abcdabcdab"))  # Output: [2, 7, 7]
-# print(mc.pmc("abcdabcdab_"))  # Output: [2, 7, 7, 0]
-# print(mc.pmc("zdaaaaaaaabaaaaaaaabaaaaaaaabbaa"))  # Output: [34]
-# print(mc.pmc("za_a_a_a_a_a_a_a_a_a_a_a_a_azaaa"))  # Output: [40, 1]
-# print(mc.pmc("zza_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_"))  # Output: [26]
-# print(mc.pmc("__"))  # [0]
-# print(mc.pmc("_zzzb"))  # [0]
-# print(mc.pmc("_"))  # [0]
-# print(mc.pmc("+"))  # Invalid output
