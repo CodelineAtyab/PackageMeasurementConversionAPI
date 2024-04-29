@@ -24,8 +24,8 @@ pip install -r requirements.txt
 ## Usage
 - Start the server:
 ```python main_app.py```
-- ```GET /api/v1/convert_measurements?input=aa``` Convert package measurements based on user input
-- ```GET /api/v1/get_history``` Retrieve conversion history.
+- ```GET http://localhost:8080/convert_measurements?input=aa``` Convert package measurements based on user input
+- ```GET http://localhost:8080/get_history``` Retrieve conversion history.
 
 ## Testing
 
