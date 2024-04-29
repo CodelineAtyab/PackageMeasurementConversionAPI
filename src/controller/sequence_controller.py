@@ -1,12 +1,11 @@
 import cherrypy
 import traceback
-import json
-import os
 
-from src.models.string import String
+from src.models.sequence import Sequence
 from src.services.sequence_service import SequenceService
-from src.services.sequence_history import FileHandler
-from src.models.sequence import StringProcessor
+from src.utils.File_Handler import FileHandler
+from src.services.sequence_processor import SequenceProcessor
+from src.models.sequence_history import SequenceHistoryModel
 
 
 class SequenceAPI(object):
@@ -15,24 +14,26 @@ class SequenceAPI(object):
     @cherrypy.tools.json_out()
     def GET(self, input_string: str = ""):
         res_msg = {"status": "FAIL", "data": []}
-        file_handler = FileHandler(storage_format='json')
-        sequence = SequenceService()
+        storage_type = "db"
+        file_handler = FileHandler(storage_type)
+        sequence = SequenceService(storage_type)
+
         try:
             if input_string:
-                string_instance = String(input_string)
-                processor = StringProcessor(string_instance)
+                string_instance = Sequence(input_string)
+                processor = SequenceProcessor(string_instance)
                 processed_results = processor.create_result()
 
                 res_msg = {"status": "SUCCESS", "data": processed_results}
                 sequence.process_and_store_string(input_string)
 
             else:
-                file_data = file_handler.open_write_file(state='r')
+                sequencehistory = SequenceHistoryModel()
+                file_data = [seq.to_dict() for seq in sequencehistory.data]
                 res_msg = {"status": "SUCCESS", "data": file_data}
         except Exception as e:
             print(traceback.format_exc(e))
             res_msg = {"status": "fail", "err_msg": "invalid sequence", "result": []}
-            #res_msg["data"] = str(e)
 
         return res_msg
 

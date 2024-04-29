@@ -14,8 +14,19 @@ class Root(object):
         """
         pass
 
+    # Set up logging
+    log_file = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'cherrypy.log')
+    cherrypy.log.error_file = log_file
+    cherrypy.log.access_file = log_file
 
-cherrypy.config.update({'server.socket_host': '0.0.0.0', 'server.socket_port': 8080})
+    # Configure the global settings for CherryPy
+    cherrypy.config.update({
+        'server.socket_host': '0.0.0.0',
+        'server.socket_port': 8080,
+        'log.error_file': log_file,
+        'log.screen': True,
+        'log.access_file': log_file
+    })
 
 # Mount the ContactsAPI application
 cherrypy.tree.mount(SequenceAPI(), '/api/sequence', {

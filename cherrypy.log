@@ -1,0 +1,105 @@
+[29/Apr/2024:11:47:35] ENGINE Bus STARTING
+[29/Apr/2024:11:47:35] ENGINE Started monitor thread 'Autoreloader'.
+[29/Apr/2024:11:47:35] ENGINE Serving on http://0.0.0.0:8080
+[29/Apr/2024:11:47:35] ENGINE Bus STARTED
+[29/Apr/2024:11:47:37] ENGINE Keyboard Interrupt: shutting down bus
+[29/Apr/2024:11:47:37] ENGINE Bus STOPPING
+[29/Apr/2024:11:47:37] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[29/Apr/2024:11:47:37] ENGINE Stopped thread 'Autoreloader'.
+[29/Apr/2024:11:47:37] ENGINE Bus STOPPED
+[29/Apr/2024:11:47:37] ENGINE Bus EXITING
+[29/Apr/2024:11:47:37] ENGINE Bus EXITED
+[29/Apr/2024:11:47:37] ENGINE Waiting for child threads to terminate...
+[29/Apr/2024:11:47:40] ENGINE Bus STARTING
+[29/Apr/2024:11:47:40] ENGINE Started monitor thread 'Autoreloader'.
+[29/Apr/2024:11:47:41] ENGINE Serving on http://0.0.0.0:8080
+[29/Apr/2024:11:47:41] ENGINE Bus STARTED
+127.0.0.1 - - [29/Apr/2024:11:47:44] "GET /api/sequence HTTP/1.1" 200 151 "" "PostmanRuntime/7.37.3"
+[29/Apr/2024:11:47:49] ENGINE Keyboard Interrupt: shutting down bus
+[29/Apr/2024:11:47:49] ENGINE Bus STOPPING
+[29/Apr/2024:11:47:49] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[29/Apr/2024:11:47:49] ENGINE Stopped thread 'Autoreloader'.
+[29/Apr/2024:11:47:49] ENGINE Bus STOPPED
+[29/Apr/2024:11:47:49] ENGINE Bus EXITING
+[29/Apr/2024:11:47:49] ENGINE Bus EXITED
+[29/Apr/2024:11:47:49] ENGINE Waiting for child threads to terminate...
+[29/Apr/2024:11:48:12] ENGINE Bus STARTING
+[29/Apr/2024:11:48:12] ENGINE Started monitor thread 'Autoreloader'.
+[29/Apr/2024:11:48:12] ENGINE Serving on http://0.0.0.0:8080
+[29/Apr/2024:11:48:12] ENGINE Bus STARTED
+[29/Apr/2024:11:48:18] HTTP 
+Traceback (most recent call last):
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\controller\sequence_controller.py", line 32, in GET
+    file_data = [seq.to_dict() for seq in sequencehistory.data]
+                 ^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\models\sequence.py", line 17, in to_dict
+    'created_at': self.created_att
+                  ^^^^^^^^^^^^^^^^
+AttributeError: 'Sequence' object has no attribute 'created_att'. Did you mean: 'created_at'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\lib\encoding.py", line 223, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\lib\jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\controller\sequence_controller.py", line 35, in GET
+    print(traceback.format_exc(e))
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 184, in format_exc
+    return "".join(format_exception(sys.exception(), limit=limit, chain=chain))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 139, in format_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 733, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 411, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'AttributeError' and 'int'
+[29/Apr/2024:11:48:18] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: PostmanRuntime/7.37.3
+  ACCEPT: */*
+  POSTMAN-TOKEN: 286b7bfb-fddc-4889-b12e-7565ec4440aa
+  HOST: localhost:8080
+  ACCEPT-ENCODING: gzip, deflate, br
+  CONNECTION: keep-alive
+127.0.0.1 - - [29/Apr/2024:11:48:18] "GET /api/sequence HTTP/1.1" 500 3690 "" "PostmanRuntime/7.37.3"
+[29/Apr/2024:11:48:41] ENGINE Keyboard Interrupt: shutting down bus
+[29/Apr/2024:11:48:41] ENGINE Bus STOPPING
+[29/Apr/2024:11:48:41] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[29/Apr/2024:11:48:41] ENGINE Stopped thread 'Autoreloader'.
+[29/Apr/2024:11:48:41] ENGINE Bus STOPPED
+[29/Apr/2024:11:48:41] ENGINE Bus EXITING
+[29/Apr/2024:11:48:41] ENGINE Bus EXITED
+[29/Apr/2024:11:48:41] ENGINE Waiting for child threads to terminate...
+[29/Apr/2024:11:50:17] ENGINE Bus STARTING
+[29/Apr/2024:11:50:17] ENGINE Started monitor thread 'Autoreloader'.
+[29/Apr/2024:11:50:17] ENGINE Serving on http://0.0.0.0:8080
+[29/Apr/2024:11:50:17] ENGINE Bus STARTED
+127.0.0.1 - - [29/Apr/2024:11:50:25] "GET /api/sequence/aziz HTTP/1.1" 200 38 "" "PostmanRuntime/7.37.3"
+127.0.0.1 - - [29/Apr/2024:11:51:01] "GET /api/sequence/dz_a_aazzaaa HTTP/1.1" 200 42 "" "PostmanRuntime/7.37.3"
+127.0.0.1 - - [29/Apr/2024:11:51:08] "GET /api/sequence HTTP/1.1" 200 275 "" "PostmanRuntime/7.37.3"
+[29/Apr/2024:11:51:23] ENGINE Keyboard Interrupt: shutting down bus
+[29/Apr/2024:11:51:23] ENGINE Bus STOPPING
+[29/Apr/2024:11:51:23] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[29/Apr/2024:11:51:23] ENGINE Stopped thread 'Autoreloader'.
+[29/Apr/2024:11:51:23] ENGINE Bus STOPPED
+[29/Apr/2024:11:51:23] ENGINE Bus EXITING
+[29/Apr/2024:11:51:23] ENGINE Bus EXITED
+[29/Apr/2024:11:51:23] ENGINE Waiting for child threads to terminate...
