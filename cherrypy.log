@@ -103,3 +103,279 @@ Request Headers:
 [29/Apr/2024:11:51:23] ENGINE Bus EXITING
 [29/Apr/2024:11:51:23] ENGINE Bus EXITED
 [29/Apr/2024:11:51:23] ENGINE Waiting for child threads to terminate...
+[29/Apr/2024:11:52:50] ENGINE Bus STARTING
+[29/Apr/2024:11:52:50] ENGINE Started monitor thread 'Autoreloader'.
+[29/Apr/2024:11:52:50] ENGINE Serving on http://0.0.0.0:8080
+[29/Apr/2024:11:52:50] ENGINE Bus STARTED
+127.0.0.1 - - [29/Apr/2024:11:53:00] "GET /api/sequence/ahmed HTTP/1.1" 200 37 "" "PostmanRuntime/7.37.3"
+127.0.0.1 - - [29/Apr/2024:11:53:04] "GET /api/sequence HTTP/1.1" 200 340 "" "PostmanRuntime/7.37.3"
+[29/Apr/2024:11:53:20] ENGINE Keyboard Interrupt: shutting down bus
+[29/Apr/2024:11:53:20] ENGINE Bus STOPPING
+[29/Apr/2024:11:53:20] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[29/Apr/2024:11:53:20] ENGINE Stopped thread 'Autoreloader'.
+[29/Apr/2024:11:53:20] ENGINE Bus STOPPED
+[29/Apr/2024:11:53:20] ENGINE Bus EXITING
+[29/Apr/2024:11:53:20] ENGINE Bus EXITED
+[29/Apr/2024:11:53:20] ENGINE Waiting for child threads to terminate...
+[29/Apr/2024:11:53:28] ENGINE Bus STARTING
+[29/Apr/2024:11:53:28] ENGINE Started monitor thread 'Autoreloader'.
+[29/Apr/2024:11:53:28] ENGINE Serving on http://0.0.0.0:8080
+[29/Apr/2024:11:53:28] ENGINE Bus STARTED
+127.0.0.1 - - [29/Apr/2024:11:53:45] "GET /api/sequence/ahmed HTTP/1.1" 200 37 "" "PostmanRuntime/7.37.3"
+[29/Apr/2024:11:54:09] ENGINE Keyboard Interrupt: shutting down bus
+[29/Apr/2024:11:54:09] ENGINE Bus STOPPING
+[29/Apr/2024:11:54:09] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[29/Apr/2024:11:54:09] ENGINE Stopped thread 'Autoreloader'.
+[29/Apr/2024:11:54:09] ENGINE Bus STOPPED
+[29/Apr/2024:11:54:09] ENGINE Bus EXITING
+[29/Apr/2024:11:54:09] ENGINE Bus EXITED
+[29/Apr/2024:11:54:09] ENGINE Waiting for child threads to terminate...
+[29/Apr/2024:13:22:24] ENGINE Bus STARTING
+[29/Apr/2024:13:22:24] ENGINE Started monitor thread 'Autoreloader'.
+[29/Apr/2024:13:22:24] ENGINE Serving on http://0.0.0.0:8080
+[29/Apr/2024:13:22:24] ENGINE Bus STARTED
+127.0.0.1 - - [29/Apr/2024:13:22:57] "GET /api/sequence/ahmed HTTP/1.1" 200 37 "" "PostmanRuntime/7.37.3"
+127.0.0.1 - - [29/Apr/2024:13:23:19] "GET /api/sequence/dzzzzaaaaa HTTP/1.1" 200 39 "" "PostmanRuntime/7.37.3"
+127.0.0.1 - - [29/Apr/2024:13:23:24] "GET /api/sequence/dzzzzaaaaaa HTTP/1.1" 200 39 "" "PostmanRuntime/7.37.3"
+[29/Apr/2024:13:23:33] HTTP 
+Traceback (most recent call last):
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\controller\sequence_controller.py", line 31, in GET
+    sequencehistory = SequenceHistoryModel()
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\models\sequence_history.py", line 11, in __init__
+    self.load_sequences()
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\models\sequence_history.py", line 36, in load_sequences
+    sequences_from_db = self.fetch_sequences_from_db()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\models\sequence_history.py", line 26, in fetch_sequences_from_db
+    cursor.execute("SELECT input_string, created_at FROM sequence_history")
+sqlite3.OperationalError: no such table: sequence_history
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\lib\encoding.py", line 223, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\lib\jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\controller\sequence_controller.py", line 35, in GET
+    print(traceback.format_exc(e))
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 184, in format_exc
+    return "".join(format_exception(sys.exception(), limit=limit, chain=chain))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 139, in format_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 733, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 411, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'OperationalError' and 'int'
+[29/Apr/2024:13:23:33] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: PostmanRuntime/7.37.3
+  ACCEPT: */*
+  POSTMAN-TOKEN: 221889de-b550-4a77-a5ef-c9cf3ccc1ef8
+  HOST: localhost:8080
+  ACCEPT-ENCODING: gzip, deflate, br
+  CONNECTION: keep-alive
+127.0.0.1 - - [29/Apr/2024:13:23:33] "GET /api/sequence HTTP/1.1" 500 4061 "" "PostmanRuntime/7.37.3"
+[29/Apr/2024:13:24:06] ENGINE Keyboard Interrupt: shutting down bus
+[29/Apr/2024:13:24:06] ENGINE Bus STOPPING
+[29/Apr/2024:13:24:07] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[29/Apr/2024:13:24:07] ENGINE Stopped thread 'Autoreloader'.
+[29/Apr/2024:13:24:07] ENGINE Bus STOPPED
+[29/Apr/2024:13:24:07] ENGINE Bus EXITING
+[29/Apr/2024:13:24:07] ENGINE Bus EXITED
+[29/Apr/2024:13:24:07] ENGINE Waiting for child threads to terminate...
+[29/Apr/2024:13:24:32] ENGINE Bus STARTING
+[29/Apr/2024:13:24:32] ENGINE Started monitor thread 'Autoreloader'.
+[29/Apr/2024:13:24:32] ENGINE Serving on http://0.0.0.0:8080
+[29/Apr/2024:13:24:32] ENGINE Bus STARTED
+[29/Apr/2024:13:24:37] HTTP 
+Traceback (most recent call last):
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\controller\sequence_controller.py", line 31, in GET
+    sequencehistory = SequenceHistoryModel()
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\models\sequence_history.py", line 11, in __init__
+    self.load_sequences()
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\models\sequence_history.py", line 36, in load_sequences
+    sequences_from_db = self.fetch_sequences_from_db()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\models\sequence_history.py", line 26, in fetch_sequences_from_db
+    cursor.execute("SELECT input_string, created_at FROM sequence_history")
+sqlite3.OperationalError: no such table: sequence_history
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\lib\encoding.py", line 223, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\lib\jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\controller\sequence_controller.py", line 35, in GET
+    print(traceback.format_exc(e))
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 184, in format_exc
+    return "".join(format_exception(sys.exception(), limit=limit, chain=chain))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 139, in format_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 733, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 411, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'OperationalError' and 'int'
+[29/Apr/2024:13:24:37] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: PostmanRuntime/7.37.3
+  ACCEPT: */*
+  POSTMAN-TOKEN: 260e7b26-2d1f-4430-b6d6-745da750c454
+  HOST: localhost:8080
+  ACCEPT-ENCODING: gzip, deflate, br
+  CONNECTION: keep-alive
+127.0.0.1 - - [29/Apr/2024:13:24:37] "GET /api/sequence HTTP/1.1" 500 4061 "" "PostmanRuntime/7.37.3"
+127.0.0.1 - - [29/Apr/2024:13:24:42] "GET /api/sequence/abbas HTTP/1.1" 200 38 "" "PostmanRuntime/7.37.3"
+127.0.0.1 - - [29/Apr/2024:13:24:47] "GET /api/sequence HTTP/1.1" 200 92 "" "PostmanRuntime/7.37.3"
+[29/Apr/2024:13:25:04] ENGINE Keyboard Interrupt: shutting down bus
+[29/Apr/2024:13:25:04] ENGINE Bus STOPPING
+[29/Apr/2024:13:25:04] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[29/Apr/2024:13:25:04] ENGINE Stopped thread 'Autoreloader'.
+[29/Apr/2024:13:25:04] ENGINE Bus STOPPED
+[29/Apr/2024:13:25:04] ENGINE Bus EXITING
+[29/Apr/2024:13:25:04] ENGINE Bus EXITED
+[29/Apr/2024:13:25:04] ENGINE Waiting for child threads to terminate...
+[29/Apr/2024:13:29:06] ENGINE Bus STARTING
+[29/Apr/2024:13:29:06] ENGINE Started monitor thread 'Autoreloader'.
+[29/Apr/2024:13:29:06] ENGINE Serving on http://0.0.0.0:8080
+[29/Apr/2024:13:29:06] ENGINE Bus STARTED
+[29/Apr/2024:13:29:08] HTTP 
+Traceback (most recent call last):
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\controller\sequence_controller.py", line 31, in GET
+    sequencehistory = SequenceHistoryModel()
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\models\sequence_history.py", line 11, in __init__
+    self.load_sequences()
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\models\sequence_history.py", line 42, in load_sequences
+    for seq in sequences_from_db:
+TypeError: 'NoneType' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\lib\encoding.py", line 223, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\lib\jsontools.py", line 59, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\.venv\Lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71519\Documents\PackageMeasurementConversionAPI\src\controller\sequence_controller.py", line 35, in GET
+    print(traceback.format_exc(e))
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 184, in format_exc
+    return "".join(format_exception(sys.exception(), limit=limit, chain=chain))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 139, in format_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 733, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\traceback.py", line 411, in _extract_from_extended_frame_gen
+    if limit >= 0:
+       ^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'TypeError' and 'int'
+[29/Apr/2024:13:29:09] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: PostmanRuntime/7.37.3
+  ACCEPT: */*
+  POSTMAN-TOKEN: 403e7db1-4799-4ea3-9ee4-031d650d70f5
+  HOST: localhost:8080
+  ACCEPT-ENCODING: gzip, deflate, br
+  CONNECTION: keep-alive
+127.0.0.1 - - [29/Apr/2024:13:29:09] "GET /api/sequence HTTP/1.1" 500 3755 "" "PostmanRuntime/7.37.3"
+[29/Apr/2024:13:29:28] ENGINE Keyboard Interrupt: shutting down bus
+[29/Apr/2024:13:29:28] ENGINE Bus STOPPING
+[29/Apr/2024:13:29:28] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[29/Apr/2024:13:29:28] ENGINE Stopped thread 'Autoreloader'.
+[29/Apr/2024:13:29:28] ENGINE Bus STOPPED
+[29/Apr/2024:13:29:28] ENGINE Bus EXITING
+[29/Apr/2024:13:29:28] ENGINE Bus EXITED
+[29/Apr/2024:13:29:28] ENGINE Waiting for child threads to terminate...
+[29/Apr/2024:13:29:57] ENGINE Bus STARTING
+[29/Apr/2024:13:29:57] ENGINE Started monitor thread 'Autoreloader'.
+[29/Apr/2024:13:29:57] ENGINE Serving on http://0.0.0.0:8080
+[29/Apr/2024:13:29:57] ENGINE Bus STARTED
+127.0.0.1 - - [29/Apr/2024:13:30:00] "GET /api/sequence HTTP/1.1" 200 33 "" "PostmanRuntime/7.37.3"
+[29/Apr/2024:13:30:17] ENGINE Keyboard Interrupt: shutting down bus
+[29/Apr/2024:13:30:17] ENGINE Bus STOPPING
+[29/Apr/2024:13:30:18] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[29/Apr/2024:13:30:18] ENGINE Stopped thread 'Autoreloader'.
+[29/Apr/2024:13:30:18] ENGINE Bus STOPPED
+[29/Apr/2024:13:30:18] ENGINE Bus EXITING
+[29/Apr/2024:13:30:18] ENGINE Bus EXITED
+[29/Apr/2024:13:30:18] ENGINE Waiting for child threads to terminate...
+[29/Apr/2024:13:30:24] ENGINE Bus STARTING
+[29/Apr/2024:13:30:24] ENGINE Started monitor thread 'Autoreloader'.
+[29/Apr/2024:13:30:25] ENGINE Serving on http://0.0.0.0:8080
+[29/Apr/2024:13:30:25] ENGINE Bus STARTED
+127.0.0.1 - - [29/Apr/2024:13:30:26] "GET /api/sequence HTTP/1.1" 200 33 "" "PostmanRuntime/7.37.3"
+[29/Apr/2024:13:30:34] ENGINE Keyboard Interrupt: shutting down bus
+[29/Apr/2024:13:30:34] ENGINE Bus STOPPING
+[29/Apr/2024:13:30:35] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[29/Apr/2024:13:30:35] ENGINE Stopped thread 'Autoreloader'.
+[29/Apr/2024:13:30:35] ENGINE Bus STOPPED
+[29/Apr/2024:13:30:35] ENGINE Bus EXITING
+[29/Apr/2024:13:30:35] ENGINE Bus EXITED
+[29/Apr/2024:13:30:35] ENGINE Waiting for child threads to terminate...
+[29/Apr/2024:13:30:38] ENGINE Bus STARTING
+[29/Apr/2024:13:30:38] ENGINE Started monitor thread 'Autoreloader'.
+[29/Apr/2024:13:30:38] ENGINE Serving on http://0.0.0.0:8080
+[29/Apr/2024:13:30:38] ENGINE Bus STARTED
+127.0.0.1 - - [29/Apr/2024:13:30:58] "GET /api/sequence/dz_a_aazzaaa HTTP/1.1" 200 42 "" "PostmanRuntime/7.37.3"
+127.0.0.1 - - [29/Apr/2024:13:31:02] "GET /api/sequence HTTP/1.1" 200 98 "" "PostmanRuntime/7.37.3"
+[29/Apr/2024:13:34:02] ENGINE Keyboard Interrupt: shutting down bus
+[29/Apr/2024:13:34:02] ENGINE Bus STOPPING
+[29/Apr/2024:13:34:02] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[29/Apr/2024:13:34:02] ENGINE Stopped thread 'Autoreloader'.
+[29/Apr/2024:13:34:02] ENGINE Bus STOPPED
+[29/Apr/2024:13:34:02] ENGINE Bus EXITING
+[29/Apr/2024:13:34:02] ENGINE Bus EXITED
+[29/Apr/2024:13:34:02] ENGINE Waiting for child threads to terminate...

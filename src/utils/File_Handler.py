@@ -21,10 +21,14 @@ class FileHandler:
         return self.dataformat.format(inputstring)
 
     def set_datastore(self, storage_format):
+        """
+
+        :param storage_format: changes format type based on what's written in the
+        controller.
+        :return: If it's db, then the db format is chosen, if JSON, the JSON format is chosen.
+        """
         if storage_format == 'db':
             return SQLDataFormat()
-        # elif storage_format == 'txt':
-        #     self.dataformat = TXTDataFormat()
         elif storage_format == 'json':
             return JSONDataFormat()
         self.INPUT_FILE_PATH = f"{self.BASE_FILE_PATH}.{storage_format}"

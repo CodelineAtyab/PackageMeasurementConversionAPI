@@ -9,11 +9,15 @@ class SQLDataFormat(DataFormat):
 
     @staticmethod
     def connect():
-        """ Establish a connection to the SQLite database. """
+        """
+        Establish a connection to the SQLite database.
+        """
         return sqlite3.connect(SQLDataFormat.db_path)
 
     def format(self, input_string: Sequence):
-        """ Insert the input string into the SQLite database with the current timestamp. """
+        """
+        Insert the input string into the SQLite database with the current timestamp.
+        """
         with self.connect() as conn:
             cursor = conn.cursor()
             cursor.execute('''

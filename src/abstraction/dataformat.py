@@ -1,6 +1,6 @@
 """
 DataFormat is an abstract class that has three subclasses, which minuplate the data into the chosen format,
-such as, TXT, JSON, CSV
+such as, JSON, SQL
 """
 
 from abc import ABC, abstractmethod

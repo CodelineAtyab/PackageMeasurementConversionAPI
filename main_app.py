@@ -28,6 +28,7 @@ class Root(object):
         'log.access_file': log_file
     })
 
+
 # Mount the ContactsAPI application
 cherrypy.tree.mount(SequenceAPI(), '/api/sequence', {
     '/': {

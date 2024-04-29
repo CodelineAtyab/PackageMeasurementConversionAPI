@@ -9,8 +9,10 @@ class SequenceProcessor:
         self.combined_list = []
 
     def process_string_to_list(self):
-        """Convert the input string to a list of integers based on character positions,
-        where 'a' is 1, 'z' is 26, and '_' is 0."""
+        """
+        Convert the input string to a list of integers based on character positions,
+        where 'a' is 1, 'z' is 26, and '_' is 0.
+        """
         for char in self.input_string:
             if 'a' <= char <= 'z':
                 num_chars_to_consider = ord(char) - ord('a') + 1
@@ -19,19 +21,36 @@ class SequenceProcessor:
                 self.append_converted_list(0)
 
     def append_converted_list(self, value):
+        """
+        :param value: Is the converted chars to position nums from Process_string_to_list func
+        :return: appends value to converted list.
+        """
         self.converted_list.append(value)
         return self.converted_list
 
     def append_combined_list(self, num):
+        """
+
+        :param num: contains list processed by handle z_case func.
+        :return: appends new list to combined_list
+        """
         self.combined_list.append(num)
         return self.combined_list
 
     def append_result(self, seq):
+        """
+
+        :param seq: contains value of each sequence.
+        :return: appends sequence to result.
+        """
         self.results.append(seq)
         return self.results
 
     def handle_z_case(self):
-        """Combine all consecutive 26s in the list with the next non-26 value."""
+        """
+        Combine all consecutive 26s in the list with the next non-26 value.
+        In order to handle Z cases as intended.
+        """
         i = 0
         while i < len(self.converted_list):
             if self.converted_list[i] == 26:
@@ -49,7 +68,10 @@ class SequenceProcessor:
         return self.combined_list
 
     def create_result(self):
-        """Process the input string to combine consecutive 26s with the next value and calculate sums."""
+        """
+        Process the input string to combine consecutive 26s with the next value,
+         and calculate sums.
+        """
         if self.input_string.startswith('_'):
             return [0]
 

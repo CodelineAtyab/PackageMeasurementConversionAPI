@@ -11,7 +11,9 @@ class SequenceHistoryModel:
         self.load_sequences()
 
     def connect(self):
-        """ Establish a connection to the SQLite database. """
+        """
+        Establish a connection to the SQLite database.
+        """
         return sqlite3.connect(self.db_path)
 
     def fetch_sequences_from_db(self):
@@ -19,19 +21,29 @@ class SequenceHistoryModel:
         Fetches all sequences from the database and returns them as a list of dictionaries.
         """
         sequences = []
-        with self.connect() as conn:
-            cursor = conn.cursor()
-            cursor.execute("SELECT input_string, created_at FROM sequence_history")
-            rows = cursor.fetchall()
-            for row in rows:
-                sequences.append({'input_string': row[0], 'created_at': row[1]})
-        return sequences
+        try:
+            with self.connect() as conn:
+                cursor = conn.cursor()
+                cursor.execute("SELECT input_string, created_at FROM sequence_history")
+                rows = cursor.fetchall()
+                for row in rows:
+                    sequences.append({'input_string': row[0], 'created_at': row[1]})
+            return sequences
+        except FileNotFoundError as file:
+            print("File Not found")
+        except Exception as ex:
+            print("Error", ex)
 
     def load_sequences(self):
-        """Load sequences from the database into the model."""
-        sequences_from_db = self.fetch_sequences_from_db()
-        for seq in sequences_from_db:
-            # Assuming Sequence class now has a method or way to also store processed time
-            sequence = Sequence(seq['input_string'])
-            sequence.processed_time = seq['created_at']  # Dynamically add processed time if not in constructor
-            self.data.append(sequence)
+        """
+        Load sequences from the database into the model.
+        """
+        try:
+            sequences_from_db = self.fetch_sequences_from_db()
+            for seq in sequences_from_db:
+                # Assuming Sequence class now has a method or way to also store processed time
+                sequence = Sequence(seq['input_string'])
+                sequence.processed_time = seq['created_at']  # Dynamically add processed time if not in constructor
+                self.data.append(sequence)
+        except Exception as ex:
+            print("Error", ex)
