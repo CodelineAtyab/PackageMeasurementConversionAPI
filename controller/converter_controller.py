@@ -1,13 +1,14 @@
 import cherrypy
-from models.package_converter import PackageConverter
-from models.sequence_history import SequenceHistory
-from models.sequence_history import Sequence
+from datetime import datetime
 
+from services.package_converter import PackageConverter
+from utilis.db_operator import PackageMeasurementHistory
+from models.sequence import Sequence
 
 class ConverterAPI:
     def __init__(self):
         self.converter = PackageConverter()
-        self.sequence_history = SequenceHistory('converter.db')
+        self.sequence_history = PackageMeasurementHistory('./utilis/converter.db')
 
     @cherrypy.expose
     @cherrypy.tools.json_out()
@@ -23,33 +24,31 @@ class ConverterAPI:
 
             input_string = input
             measurement = self.converter.package_measurement_conversion(input_string)
-
+            time = datetime.now()
             if measurement != "Invalid":
                 # Assuming no error message or response for now
                 error_message = None
                 response = "Measurements saved successfully"
 
-                sequence = Sequence(input_string, measurement)
-                self.sequence_history.save_curr_seq(sequence, error_message, response)
-                return {"status": "success",
-                        "response": response, "measurements": measurement,
-                        "error": error_message}
+                sequence = Sequence(input_string, measurement, time, response)
+                self.sequence_history.save_curr_seq(sequence)
+                return measurement
 
             else:
                 error_message = "Invalid input"
                 response = "cant convert measurement input string"
                 measurement = None
-                sequence = Sequence(input_string, measurement)
-                self.sequence_history.save_curr_seq(sequence, error_message, response)
-                return {"status": "error",
-                        "response": response, "measurements": measurement,
-                        "error": error_message}
+
+                sequence = Sequence(input_string, measurement, time, response)
+                self.sequence_history.save_curr_seq(sequence)
+                return "{}, {}".format(error_message, response)
 
         except Exception as e:
             cherrypy.response.status = 500
             error_message = str(e)
             response = 500
-            self.sequence_history.save_curr_seq(sequence, error_message, response)
+            sequence = Sequence(input_string, measurement=None, time=time, response=response)
+            self.sequence_history.save_curr_seq(sequence)
             return {"status": "error", "data": None, "error": str(e)}
 
     @cherrypy.expose

@@ -3,10 +3,11 @@ import logging
 import cherrypy
 from controller.converter_controller import ConverterAPI
 
+
 if __name__ == '__main__':
 
     # Configure LOGGING to file
-    logging.basicConfig(filename='error_log.log', level=logging.CRITICAL,
+    logging.basicConfig(filename='utilis/error_log.log', level=logging.CRITICAL,
                         format='%(asctime)s:%(levelname)s:%(message)s')
     port = 8080  # Default port
 

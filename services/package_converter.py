@@ -1,5 +1,4 @@
 import string
-from abc import ABC, abstractmethod
 
 
 class PackageConverter:

@@ -1,0 +1,16 @@
+2024-05-01 10:28:37,464:INFO:[01/May/2024:10:28:37] ENGINE Bus STARTING
+2024-05-01 10:28:37,464:INFO:[01/May/2024:10:28:37] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:28:37,683:INFO:[01/May/2024:10:28:37] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:28:37,684:INFO:[01/May/2024:10:28:37] ENGINE Bus STARTED
+2024-05-01 10:28:41,934:INFO:127.0.0.1 - - [01/May/2024:10:28:41] "GET /convert_measurements?input=aa HTTP/1.1" 200 3 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:28:45,019:INFO:127.0.0.1 - - [01/May/2024:10:28:45] "GET /convert_measurements?input=abcdabcdab HTTP/1.1" 200 9 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:28:58,069:INFO:127.0.0.1 - - [01/May/2024:10:28:58] "GET /convert_measurements?input=zdaaaaaaaabaaaaaaaabaaaaaaaabbaa HTTP/1.1" 200 4 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:29:00,885:INFO:127.0.0.1 - - [01/May/2024:10:29:00] "GET /get_history HTTP/1.1" 200 325 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:29:18,338:INFO:[01/May/2024:10:29:18] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:29:18,338:INFO:[01/May/2024:10:29:18] ENGINE Bus STOPPING
+2024-05-01 10:29:18,537:INFO:[01/May/2024:10:29:18] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:29:18,537:INFO:[01/May/2024:10:29:18] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:29:18,537:INFO:[01/May/2024:10:29:18] ENGINE Bus STOPPED
+2024-05-01 10:29:18,537:INFO:[01/May/2024:10:29:18] ENGINE Bus EXITING
+2024-05-01 10:29:18,537:INFO:[01/May/2024:10:29:18] ENGINE Bus EXITED
+2024-05-01 10:29:18,537:INFO:[01/May/2024:10:29:18] ENGINE Waiting for child threads to terminate...

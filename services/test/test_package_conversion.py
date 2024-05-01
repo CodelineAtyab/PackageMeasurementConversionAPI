@@ -1,5 +1,5 @@
 import unittest
-from models.package_converter import PackageConverter
+from services.package_converter import PackageConverter
 
 
 class TestPackageConverter(unittest.TestCase):

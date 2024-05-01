@@ -1,14 +1,9 @@
 import json
 import sqlite3
+from models.sequence import Sequence
 
 
-class Sequence:
-    def __init__(self, input_string, measurement):
-        self.input_string = input_string
-        self.measurement = measurement
-
-
-class SequenceHistory:
+class PackageMeasurementHistory:
     def __init__(self, db_path):
         self.db_path = db_path
         self.create_table()
@@ -25,8 +20,8 @@ class SequenceHistory:
                                 id INTEGER PRIMARY KEY,
                                 input_string TEXT,
                                 measurements TEXT,
-                                error_message TEXT,
-                                response TEXT
+                                response TEXT,
+                                time timestamp
                             )''')
             connection.commit()
         except sqlite3.Error as e:
@@ -35,25 +30,24 @@ class SequenceHistory:
             if connection:
                 connection.close()
 
-    def save_curr_seq(self, sequence: Sequence, error_message: str = None, response: str = None) -> bool:
+    def save_curr_seq(self, sequence: Sequence) -> bool:
         """
         Function to insert the data coming from the requests to the SQL database
         :param sequence: the sequence of characters from user
-        :param error_message: in case of errors, an error message will be returned
-        :param response: it states if the request is successful or  not
         :return: a boolean value indicating whether the sequence was saved or not
         """
         try:
             connection = sqlite3.connect(self.db_path)
             cursor = connection.cursor()
             cursor.execute(
-                "INSERT INTO sequences (input_string, measurements, error_message, response) VALUES (?, ?, ?, ?)",
-                (sequence.input_string, json.dumps(sequence.measurement), error_message, response))
+                "INSERT INTO sequences (input_string, measurements, response, time) VALUES (?, ?, ?, ?)",
+                (sequence.input_string, json.dumps(sequence.measurement),
+                 sequence.response, sequence.time))
             connection.commit()
 
             # Clear input_string and measurements lists
-            sequence.input_string = ""
-            sequence.measurement = []
+            Sequence.input_string = ""
+            Sequence.measurement = []
 
             return True
         except sqlite3.Error as e:
@@ -71,20 +65,10 @@ class SequenceHistory:
         try:
             connection = sqlite3.connect(self.db_path)
             cursor = connection.cursor()
-            cursor.execute("SELECT input_string, measurements, error_message, response FROM sequences")
+            cursor.execute("SELECT input_string, measurements, time FROM sequences")
             rows = cursor.fetchall()
 
-            history = []
-            for row in rows:
-                data = {
-                    'input_string': row[0],
-                    'measurements': json.loads(row[1]),
-                    'error_message': row[2],
-                    'response': row[3]
-                }
-                history.append(data)
-
-            return history
+            return rows
         except sqlite3.Error as e:
             print(f"Error getting history: {e}")
             return {"status": "error", "data": None, "error": str(e)}

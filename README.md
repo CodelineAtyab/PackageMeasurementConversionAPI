@@ -31,4 +31,4 @@ pip install -r requirements.txt
 
 - To run unit tests:
 
-``` python -m unittest ./models/test/test_sequence.py```
+``` python -m unittest ./services/test/test_package_conversion.py```
