@@ -11,7 +11,7 @@ class MeasurementConverter:
             else:
                 return ord(letter) - 96
             
-    def pmc(self, string):
+    def package_measurement_converter(self, string):
         """
         Parse the string and calculate the sum of letter values for each segment.
         """

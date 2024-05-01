@@ -12,7 +12,7 @@ class TestMeasurementConverter(unittest.TestCase):
         non_z_outputs = [[1], [2, 6], [2, 7, 7], [0]]
 
         for i in range(len(non_z_inputs)):
-            self.assertEqual(MeasurementConverter().pmc(non_z_inputs[i]), non_z_outputs[i])
+            self.assertEqual(MeasurementConverter().package_measurement_converter(non_z_inputs[i]), non_z_outputs[i])
         
         
     def test_z_strings(self):
@@ -23,7 +23,7 @@ class TestMeasurementConverter(unittest.TestCase):
         z_outputs = [[28, 53, 1], [40, 1], [26], [0], [0]]
 
         for i in range(len(z_inputs)):
-            self.assertEqual(MeasurementConverter().pmc(z_inputs[i]), z_outputs[i])
+            self.assertEqual(MeasurementConverter().package_measurement_converter(z_inputs[i]), z_outputs[i])
 
     def test_invalid_strings(self):
         """
@@ -32,7 +32,7 @@ class TestMeasurementConverter(unittest.TestCase):
         invalid_inputs = ["abc", "aaa", "z", "123", "+!@#"]
 
         for i in range(len(invalid_inputs)):
-            self.assertEqual(MeasurementConverter().pmc(invalid_inputs[i]), "Invalid string input")
+            self.assertEqual(MeasurementConverter().package_measurement_converter(invalid_inputs[i]), "Invalid string input")
 
 
 if __name__ == '__main__':
