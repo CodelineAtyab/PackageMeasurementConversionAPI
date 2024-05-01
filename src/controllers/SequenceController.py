@@ -32,7 +32,7 @@ class SequenceRecordsV1():
     
     @cherrypy.expose()
     @cherrypy.tools.json_out()
-    def get_all(self):
+    def get_history(self):
         """
         Handles the GET all records from Database and returns a JSON response.
         """

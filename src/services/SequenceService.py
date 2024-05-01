@@ -23,7 +23,7 @@ class SequenceService:
         sequence = self.sequence_manager.get_sequence_as_str()
 
         # Check if input is valid
-        if sequence[0] == "_":
+        if sequence[0] == "_": # Special Case for "_"
             return [0]
         elif self.sequence_manager.is_valid():
             pass
