@@ -1,19 +1,15 @@
-#import string
-
-
-
-
 def convert_measurements(input_str): #function to convert input into ints
     """
     
     """
-    input_str = input_str.lower() # convert any uppercase letter into lowercase for easier processing
-    mainList=list()  #creating a list to store the values
     def Char_To_Num(letter):
         if letter!="_":  #convert letters to ascsi except underscore
             return(ord(letter)-96)
         else:
             return 0
+        
+    input_str = input_str.lower() # convert any uppercase letter into lowercase for easier processing
+    mainList=list()  #creating a list to store the values
         
     inputLength = len(input_str)
 
@@ -60,22 +56,23 @@ def convert_measurements(input_str): #function to convert input into ints
         return mainList
 
 
-print(convert_measurements("za_a_a_a_a_a_a_a_a_a_a_a_a_azaaa"))
-print(convert_measurements("zza_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_"))
-print(convert_measurements("dz_a_a"))
-print(convert_measurements("azza"))
-print(convert_measurements("dz_a_aazzaaa"))
-print(convert_measurements("abbcc"))
-print(convert_measurements("a"))
-print(convert_measurements("aa"))
-print(convert_measurements("a_"))
-print(convert_measurements("abcdabcdab"))
-print(convert_measurements("abcdabcdab_asas"))
-print(convert_measurements("_"))
-print(convert_measurements("_ad"))
-print(convert_measurements("a_"))
-print(convert_measurements("_______"))
-print(convert_measurements("aaa"))
+if __name__ == "__main__":
+    print(convert_measurements("za_a_a_a_a_a_a_a_a_a_a_a_a_azaaa"))
+    print(convert_measurements("zza_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_"))
+    print(convert_measurements("dz_a_a"))
+    print(convert_measurements("azza"))
+    print(convert_measurements("dz_a_aazzaaa"))
+    print(convert_measurements("abbcc"))
+    print(convert_measurements("a"))
+    print(convert_measurements("aa"))
+    print(convert_measurements("a_"))
+    print(convert_measurements("abcdabcdab"))
+    print(convert_measurements("abcdabcdab_asas"))
+    print(convert_measurements("_"))
+    print(convert_measurements("_ad"))
+    print(convert_measurements("a_"))
+    print(convert_measurements("_______"))
+    print(convert_measurements("aaa"))
 
 
 

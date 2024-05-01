@@ -1,6 +1,6 @@
 import cherrypy
 import sqlite3
-from logic import convert_measurements  # Ensure this module and function are correctly implemented.
+from services.measurement_service import convert_measurements  # Ensure this module and function are correctly implemented.
 import logging
 
 DATABASE_NAME = "measurements.db"
@@ -53,3 +53,4 @@ class MeasurementAPI:
     @cherrypy.tools.json_out()
     def history(self):
         return {"history": self.get_history()}
+    
