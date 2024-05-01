@@ -1,7 +1,6 @@
-# from ..models.Sequence import Sequence
-import os
 import sqlite3
 import time
+import datetime
 
 class SequenceHistory:
     def __init__(self):
@@ -16,7 +15,8 @@ class SequenceHistory:
         CREATE TABLE IF NOT EXISTS history (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             datetime TEXT, 
-            input TEXT 
+            input TEXT,
+            status TEXT
         )
         '''
         try:
@@ -25,9 +25,9 @@ class SequenceHistory:
         except sqlite3.Error as e:
             print(f"An error occurred: {e}")
 
-    def insert_data(self, input = "test"):
-        insert_query = 'INSERT INTO history (datetime, input) VALUES (?, ?)'
-        data_to_insert = (str(time.time()), input)
+    def insert_data(self, status, input = "test"):
+        insert_query = 'INSERT INTO history (datetime, input, status) VALUES (?, ?, ?)'
+        data_to_insert = (str(time.time()), input, status)
 
         try:
             self.cursor.execute(insert_query, data_to_insert)
@@ -39,11 +39,18 @@ class SequenceHistory:
         select_query = 'SELECT * FROM history'
 
         try:
+            # Fetch history from database and format it (epoch to human-readable time)
             self.cursor.execute(select_query)
-            return self.cursor.fetchall()
+            fetched_data = self.cursor.fetchall()
+            filtered_data = []
+            for entry in fetched_data:
+                # Convert the timestamp to a datetime object and format it
+                timestamp = float(entry[1])
+                readable_time = datetime.datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
+                # Append the converted time and the rest of the data, excluding the ID
+                filtered_sublist = [readable_time, entry[2], entry[3]]
+                filtered_data.append(filtered_sublist)
+            return filtered_data
         except sqlite3.Error as e:
             print(f"An error occurred: {e}")
             return None
-
-    def close(self):
-        self.conn.close()

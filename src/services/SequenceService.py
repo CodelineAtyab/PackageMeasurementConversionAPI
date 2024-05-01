@@ -1,5 +1,5 @@
-from ..models.Sequence import Sequence
-from ..services.SequenceHistory import SequenceHistory
+from src.models.Sequence import Sequence
+from src.services.SequenceHistory import SequenceHistory
 
 
 class SequenceService:
@@ -12,11 +12,6 @@ class SequenceService:
 
     def get_sequence(self, str_representation):
         self.sequence_manager.set_sequence(str_representation)
-
-        if self.sequence_manager.is_valid():
-            pass
-        else:
-            raise Exception("INVALID SEQUENCE") 
         
     def append_num_to_list(self, number):
         self.result.append(number)
@@ -24,6 +19,15 @@ class SequenceService:
 
     def process_sequence(self):
         sequence = self.sequence_manager.get_sequence_as_str()
+
+        # Check if input is valid
+        if sequence[0] == "_":
+            return [0]
+        elif self.sequence_manager.is_valid():
+            pass
+        else:
+            raise Exception("INVALID SEQUENCE")
+        
         self.result = []
         index = 0
         is_counting = False
