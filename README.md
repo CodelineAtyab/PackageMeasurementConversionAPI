@@ -29,26 +29,19 @@ This API is designed to convert measurement input strings into a list of total v
 
 ### 1. Start the server application:
 
-      python main_app.py 
+      python main.py 
 
 ### 2. The server will start, and you will see a status message.
 
 ## API Usage
 ### 1. To view the converted alphabet input string into the corresponding list of numbers in JSON format.
 
-   
-
 ### Example requests:
 
-    http://localhost:8888/convert_measurements/abbcc
+    http://localhost:8888/convert_measurements?input_str=abbcc
 
-    http://localhost:8888/convert_measurements/aa
+    http://localhost:8888/convert_measurements?input_str=aa
 
-### To retrieve the stored request history, use the following endpoint:
-
-    GET /get_data_from_db
-
-This endpoint will return the persisted history of all requests made to the conversion endpoint.
 
 ## Contributing
 Contributing to this project is prohibited due to Course Restrictions.
