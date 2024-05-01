@@ -67,7 +67,7 @@ This endpoint will return the persisted history of all requests made to the conv
 
 The application follows the principles of Test-Driven Development (TDD). Unit tests are provided in the `test/` directory. To run the tests, execute the following command:
 
-    python -m unittest Package_Measurement_Conversion_API/test/test_converter.py
+    python -m unittest Package_Measurement_Conversion_API/services/test/test_converter.py
 
 ## Contributing
 Contributing to this project is **prohibited**.
