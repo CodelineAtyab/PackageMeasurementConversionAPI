@@ -3,9 +3,9 @@ from datetime import datetime
 
 
 class Sequence:
-    def __init__(self, input_string):
+    def __init__(self, input_string, created_at_epoch_time=time.time()):
         self.input_string = input_string
-        self.created_at = time.time()
+        self.created_at = created_at_epoch_time
 
     def get_string(self):
         return self.input_string

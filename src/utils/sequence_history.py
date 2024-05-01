@@ -2,6 +2,7 @@ from src.models.sequence import Sequence
 
 
 import sqlite3
+from datetime import datetime
 
 
 class SequenceHistoryModel:
@@ -27,7 +28,8 @@ class SequenceHistoryModel:
                 cursor.execute("SELECT input_string, created_at FROM sequence_history")
                 rows = cursor.fetchall()
                 for row in rows:
-                    sequences.append({'input_string': row[0], 'created_at': row[1]})
+                    formatted = datetime.fromtimestamp(float(row[1])).strftime("%Y-%m-%d %H:%M:%S")
+                    sequences.append({'input_string': row[0], 'created_at': formatted})
             return sequences
         except FileNotFoundError as file:
             print("File Not found")
@@ -41,9 +43,7 @@ class SequenceHistoryModel:
         try:
             sequences_from_db = self.fetch_sequences_from_db()
             for seq in sequences_from_db:
-                # Assuming Sequence class now has a method or way to also store processed time
-                sequence = Sequence(seq['input_string'])
-                sequence.processed_time = seq['created_at']  # Dynamically add processed time if not in constructor
+                sequence = Sequence(seq['input_string'], seq['created_at'])
                 self.data.append(sequence)
         except Exception as ex:
             print("Error", ex)
