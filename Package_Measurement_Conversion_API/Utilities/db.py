@@ -9,6 +9,7 @@ class MeasurementsDB(object):
         self.create_table()
 
     def create_table(self):
+
         # Create the table that will store the conversion history
         self.cursor.execute('''
             CREATE TABLE IF NOT EXISTS conversion_history (

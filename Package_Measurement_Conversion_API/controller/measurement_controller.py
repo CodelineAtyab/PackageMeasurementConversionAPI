@@ -7,7 +7,8 @@ db_manager = MeasurementsDB("conversion_history.db")
 Measure = Measurements()
 
 # Configure logging
-logging.basicConfig(level=logging.DEBUG)  # Set logging level to DEBUG
+logging.basicConfig(filename='Package_Measurement_Conversion_API\Logging\error_log.log', level=logging.CRITICAL,
+                        format='%(asctime)s:%(levelname)s:%(message)s')
 
 
 class MeasurementService(object):
