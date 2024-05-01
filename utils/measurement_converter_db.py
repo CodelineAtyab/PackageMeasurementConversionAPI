@@ -2,7 +2,7 @@ import sqlite3
 import json
 
 class MeasurementConverterDB(object):
-    def __init__(self, db_name='history.db'):
+    def __init__(self, db_name='./data/history.db'):
         self.db_name = db_name
         self.conn = sqlite3.connect(self.db_name)
         self.cursor = self.conn.cursor()
