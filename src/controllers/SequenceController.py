@@ -14,18 +14,18 @@ class SequenceRecordsV1():
     @cherrypy.tools.json_out()
     def convert_measurements(self, input: str = ""):
         """
-        Handles the GET request and return a JSON response.
+        Handles the GET request and return a JSON response. The API will convert measurement input
+        string from a sequence of characters into a result list of the total values of measured 
+        inflows for each package.
         """
 
         try:  
             self.sequence_service.get_sequence(input)
             res_msg = {"status": "success", "err_msg": "", "result": self.sequence_service.process_sequence()}
-
             self.sequence_history.insert_data("SUCCESS", input)
-
-        except:
-            self.sequence_history.insert_data("FAILED", input)
+        except: # If Invalid Sequence
             res_msg = {"status": "fail", "err_msg": "invalid sequence", "result": []}
+            self.sequence_history.insert_data("FAILED", input)
 
 
         return res_msg

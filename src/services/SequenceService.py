@@ -9,14 +9,16 @@ class SequenceService:
         self.sequence_history = SequenceHistory()
         self.result = []
 
-
+    # Receives the input sequenece from the API endpoint and stores it as a Sequence object.
     def get_sequence(self, str_representation):
         self.sequence_manager.set_sequence(str_representation)
-        
+    
+    # Adds integer to result list (sum of each cycle) and returns it.
     def append_num_to_list(self, number):
         self.result.append(number)
         return self.result
 
+    # Processes the Sequence object and returns the result list.
     def process_sequence(self):
         sequence = self.sequence_manager.get_sequence_as_str()
 

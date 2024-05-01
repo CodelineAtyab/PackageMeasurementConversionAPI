@@ -2,6 +2,7 @@ import sqlite3
 import time
 import datetime
 
+# Manages Database Operations
 class SequenceHistory:
     def __init__(self):
         self.db_name = "sequence_history.db"
