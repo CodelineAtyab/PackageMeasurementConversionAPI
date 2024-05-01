@@ -11,3 +11,923 @@
 2024-04-29 12:02:05,006:INFO:[29/Apr/2024:12:02:05] ENGINE Bus EXITING
 2024-04-29 12:02:05,006:INFO:[29/Apr/2024:12:02:05] ENGINE Bus EXITED
 2024-04-29 12:02:05,006:INFO:[29/Apr/2024:12:02:05] ENGINE Waiting for child threads to terminate...
+2024-05-01 08:54:23,434:INFO:[01/May/2024:08:54:23] ENGINE Bus STARTING
+2024-05-01 08:54:23,435:INFO:[01/May/2024:08:54:23] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 08:54:23,656:INFO:[01/May/2024:08:54:23] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 08:54:23,656:INFO:[01/May/2024:08:54:23] ENGINE Bus STARTED
+2024-05-01 08:54:59,871:INFO:127.0.0.1 - - [01/May/2024:08:54:59] "GET /?user_input=abbcc HTTP/1.1" 404 1518 "" "PostmanRuntime/7.37.3"
+2024-05-01 08:55:04,235:INFO:127.0.0.1 - - [01/May/2024:08:55:04] "GET /?user_input=abbcc HTTP/1.1" 404 1518 "" "PostmanRuntime/7.37.3"
+2024-05-01 08:55:21,209:INFO:[01/May/2024:08:55:21] ENGINE Restarting because C:\Users\71524\PackageMeasurementConversionAPI\controller\handlers.py changed.
+2024-05-01 08:55:21,209:INFO:[01/May/2024:08:55:21] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 08:55:21,209:INFO:[01/May/2024:08:55:21] ENGINE Bus STOPPING
+2024-05-01 08:55:21,347:INFO:[01/May/2024:08:55:21] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 08:55:21,347:INFO:[01/May/2024:08:55:21] ENGINE Bus STOPPED
+2024-05-01 08:55:21,347:INFO:[01/May/2024:08:55:21] ENGINE Bus EXITING
+2024-05-01 08:55:21,347:INFO:[01/May/2024:08:55:21] ENGINE Bus EXITED
+2024-05-01 08:55:21,410:INFO:[01/May/2024:08:55:21] ENGINE Waiting for child threads to terminate...
+2024-05-01 08:55:21,410:INFO:[01/May/2024:08:55:21] ENGINE Re-spawning C:\Program Files\Python312\python.exe C:\Users\71524\PackageMeasurementConversionAPI\main_app.py
+2024-05-01 08:55:22,408:INFO:[01/May/2024:08:55:22] ENGINE Bus STARTING
+2024-05-01 08:55:22,409:INFO:[01/May/2024:08:55:22] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 08:55:22,625:INFO:[01/May/2024:08:55:22] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 08:55:22,626:INFO:[01/May/2024:08:55:22] ENGINE Bus STARTED
+2024-05-01 08:55:31,238:INFO:[01/May/2024:08:55:31] ENGINE Bus STARTING
+2024-05-01 08:55:31,240:INFO:[01/May/2024:08:55:31] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 08:55:32,437:ERROR:[01/May/2024:08:55:32] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x000001A85F96F3B0>>
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\portend.py", line 71, in assert_free
+    list(itertools.starmap(self._connect, info))
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\portend.py", line 87, in _connect
+    raise PortNotFree(tmpl.format(**locals()))
+portend.PortNotFree: Port 8080 is in use on 127.0.0.1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\portend.py", line 126, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 0.0.0.0.
+
+2024-05-01 08:55:32,437:ERROR:[01/May/2024:08:55:32] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 0.0.0.0.')
+
+2024-05-01 08:55:32,437:INFO:[01/May/2024:08:55:32] ENGINE Bus STOPPING
+2024-05-01 08:55:32,438:INFO:[01/May/2024:08:55:32] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) already shut down
+2024-05-01 08:55:32,438:INFO:[01/May/2024:08:55:32] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 08:55:32,438:INFO:[01/May/2024:08:55:32] ENGINE Bus STOPPED
+2024-05-01 08:55:32,438:INFO:[01/May/2024:08:55:32] ENGINE Bus EXITING
+2024-05-01 08:55:32,438:INFO:[01/May/2024:08:55:32] ENGINE Bus EXITED
+2024-05-01 08:56:21,813:INFO:[01/May/2024:08:56:21] ENGINE Bus STARTING
+2024-05-01 08:56:21,813:INFO:[01/May/2024:08:56:21] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 08:56:22,028:INFO:[01/May/2024:08:56:22] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 08:56:22,028:INFO:[01/May/2024:08:56:22] ENGINE Bus STARTED
+2024-05-01 08:56:24,776:INFO:127.0.0.1 - - [01/May/2024:08:56:24] "GET /?user_input=abbcc HTTP/1.1" 200 54 "" "PostmanRuntime/7.37.3"
+2024-05-01 08:56:32,698:INFO:[01/May/2024:08:56:32] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 08:56:32,698:INFO:[01/May/2024:08:56:32] ENGINE Bus STOPPING
+2024-05-01 08:56:32,840:INFO:[01/May/2024:08:56:32] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 08:56:32,840:INFO:[01/May/2024:08:56:32] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 08:56:32,841:INFO:[01/May/2024:08:56:32] ENGINE Bus STOPPED
+2024-05-01 08:56:32,841:INFO:[01/May/2024:08:56:32] ENGINE Bus EXITING
+2024-05-01 08:56:32,841:INFO:[01/May/2024:08:56:32] ENGINE Bus EXITED
+2024-05-01 08:56:32,841:INFO:[01/May/2024:08:56:32] ENGINE Waiting for child threads to terminate...
+2024-05-01 08:56:33,594:INFO:[01/May/2024:08:56:33] ENGINE Bus STARTING
+2024-05-01 08:56:33,595:INFO:[01/May/2024:08:56:33] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 08:56:33,806:INFO:[01/May/2024:08:56:33] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 08:56:33,806:INFO:[01/May/2024:08:56:33] ENGINE Bus STARTED
+2024-05-01 08:56:41,057:INFO:127.0.0.1 - - [01/May/2024:08:56:41] "GET /?user_input=abbcc_ HTTP/1.1" 404 1518 "" "PostmanRuntime/7.37.3"
+2024-05-01 08:56:45,854:INFO:[01/May/2024:08:56:45] ENGINE Restarting because C:\Users\71524\PackageMeasurementConversionAPI\controller\handlers.py changed.
+2024-05-01 08:56:45,854:INFO:[01/May/2024:08:56:45] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 08:56:45,854:INFO:[01/May/2024:08:56:45] ENGINE Bus STOPPING
+2024-05-01 08:56:46,072:INFO:[01/May/2024:08:56:46] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 08:56:46,072:INFO:[01/May/2024:08:56:46] ENGINE Bus STOPPED
+2024-05-01 08:56:46,072:INFO:[01/May/2024:08:56:46] ENGINE Bus EXITING
+2024-05-01 08:56:46,072:INFO:[01/May/2024:08:56:46] ENGINE Bus EXITED
+2024-05-01 08:56:46,104:INFO:[01/May/2024:08:56:46] ENGINE Waiting for child threads to terminate...
+2024-05-01 08:56:46,105:INFO:[01/May/2024:08:56:46] ENGINE Re-spawning C:\Program Files\Python312\python.exe C:\Users\71524\PackageMeasurementConversionAPI\main_app.py
+2024-05-01 08:56:47,143:INFO:[01/May/2024:08:56:47] ENGINE Bus STARTING
+2024-05-01 08:56:47,143:INFO:[01/May/2024:08:56:47] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 08:56:47,381:INFO:[01/May/2024:08:56:47] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 08:56:47,381:INFO:[01/May/2024:08:56:47] ENGINE Bus STARTED
+2024-05-01 08:57:11,519:INFO:[01/May/2024:08:57:11] ENGINE Restarting because C:\Users\71524\PackageMeasurementConversionAPI\controller\handlers.py changed.
+2024-05-01 08:57:11,519:INFO:[01/May/2024:08:57:11] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 08:57:11,519:INFO:[01/May/2024:08:57:11] ENGINE Bus STOPPING
+2024-05-01 08:57:11,700:INFO:[01/May/2024:08:57:11] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 08:57:11,700:INFO:[01/May/2024:08:57:11] ENGINE Bus STOPPED
+2024-05-01 08:57:11,700:INFO:[01/May/2024:08:57:11] ENGINE Bus EXITING
+2024-05-01 08:57:11,700:INFO:[01/May/2024:08:57:11] ENGINE Bus EXITED
+2024-05-01 08:57:11,795:INFO:[01/May/2024:08:57:11] ENGINE Waiting for child threads to terminate...
+2024-05-01 08:57:11,795:INFO:[01/May/2024:08:57:11] ENGINE Re-spawning C:\Program Files\Python312\python.exe C:\Users\71524\PackageMeasurementConversionAPI\main_app.py
+2024-05-01 08:57:37,361:INFO:[01/May/2024:08:57:37] ENGINE Bus STARTING
+2024-05-01 08:57:37,362:INFO:[01/May/2024:08:57:37] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 08:57:37,573:INFO:[01/May/2024:08:57:37] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 08:57:37,574:INFO:[01/May/2024:08:57:37] ENGINE Bus STARTED
+2024-05-01 08:57:40,024:INFO:127.0.0.1 - - [01/May/2024:08:57:40] "GET /?user_input=abbcc_ HTTP/1.1" 200 57 "" "PostmanRuntime/7.37.3"
+2024-05-01 08:58:19,999:INFO:[01/May/2024:08:58:19] ENGINE Restarting because C:\Users\71524\PackageMeasurementConversionAPI\models\conversion.py changed.
+2024-05-01 08:58:19,999:INFO:[01/May/2024:08:58:19] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 08:58:19,999:INFO:[01/May/2024:08:58:19] ENGINE Bus STOPPING
+2024-05-01 08:58:20,128:INFO:[01/May/2024:08:58:20] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 08:58:20,128:INFO:[01/May/2024:08:58:20] ENGINE Bus STOPPED
+2024-05-01 08:58:20,128:INFO:[01/May/2024:08:58:20] ENGINE Bus EXITING
+2024-05-01 08:58:20,128:INFO:[01/May/2024:08:58:20] ENGINE Bus EXITED
+2024-05-01 08:58:20,153:INFO:[01/May/2024:08:58:20] ENGINE Waiting for child threads to terminate...
+2024-05-01 08:58:20,154:INFO:[01/May/2024:08:58:20] ENGINE Re-spawning C:\Program Files\Python312\python.exe C:\Users\71524\PackageMeasurementConversionAPI\main_app.py
+2024-05-01 08:58:59,243:INFO:[01/May/2024:08:58:59] ENGINE Bus STARTING
+2024-05-01 08:58:59,244:INFO:[01/May/2024:08:58:59] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 08:58:59,466:INFO:[01/May/2024:08:58:59] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 08:58:59,466:INFO:[01/May/2024:08:58:59] ENGINE Bus STARTED
+2024-05-01 08:59:02,001:INFO:127.0.0.1 - - [01/May/2024:08:59:02] "GET /?user_input=abbcc_ HTTP/1.1" 200 57 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:00:13,310:INFO:[01/May/2024:09:00:13] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 09:00:13,310:INFO:[01/May/2024:09:00:13] ENGINE Bus STOPPING
+2024-05-01 09:00:13,452:INFO:[01/May/2024:09:00:13] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 09:00:13,452:INFO:[01/May/2024:09:00:13] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 09:00:13,452:INFO:[01/May/2024:09:00:13] ENGINE Bus STOPPED
+2024-05-01 09:00:13,452:INFO:[01/May/2024:09:00:13] ENGINE Bus EXITING
+2024-05-01 09:00:13,452:INFO:[01/May/2024:09:00:13] ENGINE Bus EXITED
+2024-05-01 09:00:13,452:INFO:[01/May/2024:09:00:13] ENGINE Waiting for child threads to terminate...
+2024-05-01 09:00:14,542:INFO:[01/May/2024:09:00:14] ENGINE Bus STARTING
+2024-05-01 09:00:14,543:INFO:[01/May/2024:09:00:14] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 09:00:14,759:INFO:[01/May/2024:09:00:14] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 09:00:14,759:INFO:[01/May/2024:09:00:14] ENGINE Bus STARTED
+2024-05-01 09:00:17,761:INFO:127.0.0.1 - - [01/May/2024:09:00:17] "GET /?user_input=abbcc_ HTTP/1.1" 200 57 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:00:32,682:INFO:127.0.0.1 - - [01/May/2024:09:00:32] "GET /get_history HTTP/1.1" 200 923 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:00:39,468:INFO:[01/May/2024:09:00:39] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 09:00:39,469:INFO:[01/May/2024:09:00:39] ENGINE Bus STOPPING
+2024-05-01 09:00:39,622:INFO:[01/May/2024:09:00:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 09:00:39,623:INFO:[01/May/2024:09:00:39] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 09:00:39,623:INFO:[01/May/2024:09:00:39] ENGINE Bus STOPPED
+2024-05-01 09:00:39,623:INFO:[01/May/2024:09:00:39] ENGINE Bus EXITING
+2024-05-01 09:00:39,623:INFO:[01/May/2024:09:00:39] ENGINE Bus EXITED
+2024-05-01 09:00:39,623:INFO:[01/May/2024:09:00:39] ENGINE Waiting for child threads to terminate...
+2024-05-01 09:19:21,825:INFO:[01/May/2024:09:19:21] ENGINE Bus STARTING
+2024-05-01 09:19:21,826:INFO:[01/May/2024:09:19:21] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 09:19:22,056:INFO:[01/May/2024:09:19:22] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 09:19:22,056:INFO:[01/May/2024:09:19:22] ENGINE Bus STARTED
+2024-05-01 09:19:26,920:INFO:127.0.0.1 - - [01/May/2024:09:19:26] "GET /get_history HTTP/1.1" 200 923 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:19:33,821:ERROR:[01/May/2024:09:19:33] HTTP 
+Traceback (most recent call last):
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 37, in __call__
+    self.controller.save_to_db(user_input, converted_result, "SUCCESS")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MeasurementConversion' object has no attribute 'save_to_db'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\lib\encoding.py", line 223, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 43, in __call__
+    self.controller.save_to_db(user_input, "", "ERROR")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MeasurementConversion' object has no attribute 'save_to_db'
+2024-05-01 09:19:33,896:INFO:[01/May/2024:09:19:33] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: PostmanRuntime/7.37.3
+  ACCEPT: */*
+  POSTMAN-TOKEN: 18cb79e7-be14-401e-969e-4ec31cb75bf7
+  HOST: localhost:8080
+  ACCEPT-ENCODING: gzip, deflate, br
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 31
+2024-05-01 09:19:33,901:INFO:127.0.0.1 - - [01/May/2024:09:19:33] "GET /?user_input=aa HTTP/1.1" 500 2312 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:21:28,595:INFO:[01/May/2024:09:21:28] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 09:21:28,595:INFO:[01/May/2024:09:21:28] ENGINE Bus STOPPING
+2024-05-01 09:21:28,791:INFO:[01/May/2024:09:21:28] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 09:21:28,791:INFO:[01/May/2024:09:21:28] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 09:21:28,791:INFO:[01/May/2024:09:21:28] ENGINE Bus STOPPED
+2024-05-01 09:21:28,792:INFO:[01/May/2024:09:21:28] ENGINE Bus EXITING
+2024-05-01 09:21:28,792:INFO:[01/May/2024:09:21:28] ENGINE Bus EXITED
+2024-05-01 09:21:28,792:INFO:[01/May/2024:09:21:28] ENGINE Waiting for child threads to terminate...
+2024-05-01 09:22:57,764:INFO:[01/May/2024:09:22:57] ENGINE Bus STARTING
+2024-05-01 09:22:57,765:INFO:[01/May/2024:09:22:57] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 09:22:57,997:INFO:[01/May/2024:09:22:57] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 09:22:57,997:INFO:[01/May/2024:09:22:57] ENGINE Bus STARTED
+2024-05-01 09:23:01,037:INFO:127.0.0.1 - - [01/May/2024:09:23:01] "GET /?user_input=aa HTTP/1.1" 200 51 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:23:33,195:INFO:127.0.0.1 - - [01/May/2024:09:23:33] "GET /?user_input=abcdabcdab_ HTTP/1.1" 200 60 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:23:40,942:INFO:127.0.0.1 - - [01/May/2024:09:23:40] "GET /get_history HTTP/1.1" 200 1119 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:23:52,172:INFO:[01/May/2024:09:23:52] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 09:23:52,173:INFO:[01/May/2024:09:23:52] ENGINE Bus STOPPING
+2024-05-01 09:23:52,356:INFO:[01/May/2024:09:23:52] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 09:23:52,356:INFO:[01/May/2024:09:23:52] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 09:23:52,358:INFO:[01/May/2024:09:23:52] ENGINE Bus STOPPED
+2024-05-01 09:23:52,358:INFO:[01/May/2024:09:23:52] ENGINE Bus EXITING
+2024-05-01 09:23:52,358:INFO:[01/May/2024:09:23:52] ENGINE Bus EXITED
+2024-05-01 09:23:52,358:INFO:[01/May/2024:09:23:52] ENGINE Waiting for child threads to terminate...
+2024-05-01 09:25:02,630:INFO:[01/May/2024:09:25:02] ENGINE Bus STARTING
+2024-05-01 09:25:02,631:INFO:[01/May/2024:09:25:02] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 09:25:02,850:INFO:[01/May/2024:09:25:02] ENGINE Serving on http://0.0.0.0:8888
+2024-05-01 09:25:02,850:INFO:[01/May/2024:09:25:02] ENGINE Bus STARTED
+2024-05-01 09:25:13,842:INFO:127.0.0.1 - - [01/May/2024:09:25:13] "GET /get_history HTTP/1.1" 200 1119 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:25:23,065:INFO:127.0.0.1 - - [01/May/2024:09:25:23] "GET /aa HTTP/1.1" 200 51 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:25:27,375:INFO:[01/May/2024:09:25:27] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 09:25:27,380:INFO:[01/May/2024:09:25:27] ENGINE Bus STOPPING
+2024-05-01 09:25:27,573:INFO:[01/May/2024:09:25:27] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8888)) shut down
+2024-05-01 09:25:27,573:INFO:[01/May/2024:09:25:27] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 09:25:27,573:INFO:[01/May/2024:09:25:27] ENGINE Bus STOPPED
+2024-05-01 09:25:27,573:INFO:[01/May/2024:09:25:27] ENGINE Bus EXITING
+2024-05-01 09:25:27,573:INFO:[01/May/2024:09:25:27] ENGINE Bus EXITED
+2024-05-01 09:25:27,573:INFO:[01/May/2024:09:25:27] ENGINE Waiting for child threads to terminate...
+2024-05-01 09:42:34,438:INFO:[01/May/2024:09:42:34] ENGINE Bus STARTING
+2024-05-01 09:42:34,439:INFO:[01/May/2024:09:42:34] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 09:42:34,648:INFO:[01/May/2024:09:42:34] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 09:42:34,648:INFO:[01/May/2024:09:42:34] ENGINE Bus STARTED
+2024-05-01 09:43:26,232:INFO:[01/May/2024:09:43:26] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 09:43:26,232:INFO:[01/May/2024:09:43:26] ENGINE Bus STOPPING
+2024-05-01 09:43:26,395:INFO:[01/May/2024:09:43:26] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 09:43:26,395:INFO:[01/May/2024:09:43:26] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 09:43:26,395:INFO:[01/May/2024:09:43:26] ENGINE Bus STOPPED
+2024-05-01 09:43:26,395:INFO:[01/May/2024:09:43:26] ENGINE Bus EXITING
+2024-05-01 09:43:26,395:INFO:[01/May/2024:09:43:26] ENGINE Bus EXITED
+2024-05-01 09:43:26,395:INFO:[01/May/2024:09:43:26] ENGINE Waiting for child threads to terminate...
+2024-05-01 09:43:26,954:INFO:[01/May/2024:09:43:26] ENGINE Bus STARTING
+2024-05-01 09:43:26,955:INFO:[01/May/2024:09:43:26] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 09:43:27,162:INFO:[01/May/2024:09:43:27] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 09:43:27,162:INFO:[01/May/2024:09:43:27] ENGINE Bus STARTED
+2024-05-01 09:43:35,318:INFO:127.0.0.1 - - [01/May/2024:09:43:35] "GET /abc HTTP/1.1" 200 63 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:43:43,093:INFO:127.0.0.1 - - [01/May/2024:09:43:43] "GET /get_history HTTP/1.1" 200 1310 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:43:48,201:INFO:[01/May/2024:09:43:48] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 09:43:48,201:INFO:[01/May/2024:09:43:48] ENGINE Bus STOPPING
+2024-05-01 09:43:48,352:INFO:[01/May/2024:09:43:48] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 09:43:48,352:INFO:[01/May/2024:09:43:48] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 09:43:48,352:INFO:[01/May/2024:09:43:48] ENGINE Bus STOPPED
+2024-05-01 09:43:48,352:INFO:[01/May/2024:09:43:48] ENGINE Bus EXITING
+2024-05-01 09:43:48,352:INFO:[01/May/2024:09:43:48] ENGINE Bus EXITED
+2024-05-01 09:43:48,352:INFO:[01/May/2024:09:43:48] ENGINE Waiting for child threads to terminate...
+2024-05-01 09:44:09,066:INFO:[01/May/2024:09:44:09] ENGINE Bus STARTING
+2024-05-01 09:44:09,067:INFO:[01/May/2024:09:44:09] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 09:44:09,304:INFO:[01/May/2024:09:44:09] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 09:44:09,304:INFO:[01/May/2024:09:44:09] ENGINE Bus STARTED
+2024-05-01 09:44:11,730:INFO:127.0.0.1 - - [01/May/2024:09:44:11] "GET /get_history HTTP/1.1" 200 1310 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:44:19,479:INFO:127.0.0.1 - - [01/May/2024:09:44:19] "GET /abbccc HTTP/1.1" 200 63 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:44:25,939:INFO:127.0.0.1 - - [01/May/2024:09:44:25] "GET /abbcc HTTP/1.1" 200 54 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:44:39,126:INFO:[01/May/2024:09:44:39] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 09:44:39,126:INFO:[01/May/2024:09:44:39] ENGINE Bus STOPPING
+2024-05-01 09:44:39,289:INFO:[01/May/2024:09:44:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 09:44:39,289:INFO:[01/May/2024:09:44:39] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 09:44:39,290:INFO:[01/May/2024:09:44:39] ENGINE Bus STOPPED
+2024-05-01 09:44:39,290:INFO:[01/May/2024:09:44:39] ENGINE Bus EXITING
+2024-05-01 09:44:39,290:INFO:[01/May/2024:09:44:39] ENGINE Bus EXITED
+2024-05-01 09:44:39,290:INFO:[01/May/2024:09:44:39] ENGINE Waiting for child threads to terminate...
+2024-05-01 09:46:45,353:INFO:[01/May/2024:09:46:45] ENGINE Bus STARTING
+2024-05-01 09:46:45,354:INFO:[01/May/2024:09:46:45] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 09:46:45,591:INFO:[01/May/2024:09:46:45] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 09:46:45,592:INFO:[01/May/2024:09:46:45] ENGINE Bus STARTED
+2024-05-01 09:46:53,207:INFO:127.0.0.1 - - [01/May/2024:09:46:53] "GET /get_history HTTP/1.1" 200 1510 "" "PostmanRuntime/7.37.3"
+2024-05-01 09:47:05,356:INFO:[01/May/2024:09:47:05] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 09:47:05,357:INFO:[01/May/2024:09:47:05] ENGINE Bus STOPPING
+2024-05-01 09:47:05,535:INFO:[01/May/2024:09:47:05] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 09:47:05,535:INFO:[01/May/2024:09:47:05] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 09:47:05,536:INFO:[01/May/2024:09:47:05] ENGINE Bus STOPPED
+2024-05-01 09:47:05,536:INFO:[01/May/2024:09:47:05] ENGINE Bus EXITING
+2024-05-01 09:47:05,536:INFO:[01/May/2024:09:47:05] ENGINE Bus EXITED
+2024-05-01 09:47:05,536:INFO:[01/May/2024:09:47:05] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:02:48,605:INFO:[01/May/2024:10:02:48] ENGINE Bus STARTING
+2024-05-01 10:02:48,606:INFO:[01/May/2024:10:02:48] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:02:48,829:INFO:[01/May/2024:10:02:48] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:02:48,829:INFO:[01/May/2024:10:02:48] ENGINE Bus STARTED
+2024-05-01 10:02:52,932:INFO:127.0.0.1 - - [01/May/2024:10:02:52] "GET /get_history HTTP/1.1" 200 1510 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:03:04,651:ERROR:[01/May/2024:10:03:04] HTTP 
+Traceback (most recent call last):
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 53, in __call__
+    self.dbops.save_to_db(user_input, converted_result, "SUCCESS")
+TypeError: ConversionDatabaseOperations.save_to_db() takes 3 positional arguments but 4 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\lib\encoding.py", line 223, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 59, in __call__
+    self.dbops.save_to_db(user_input, "", "ERROR")
+TypeError: ConversionDatabaseOperations.save_to_db() takes 3 positional arguments but 4 were given
+2024-05-01 10:03:04,742:INFO:[01/May/2024:10:03:04] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: PostmanRuntime/7.37.3
+  ACCEPT: */*
+  POSTMAN-TOKEN: 8c46498d-635d-4cc2-9061-d936726c3f99
+  HOST: localhost:8080
+  ACCEPT-ENCODING: gzip, deflate, br
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 31
+2024-05-01 10:03:04,744:INFO:127.0.0.1 - - [01/May/2024:10:03:04] "GET /bcc HTTP/1.1" 500 2284 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:10:39,284:INFO:[01/May/2024:10:10:39] ENGINE Restarting because C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py changed.
+2024-05-01 10:10:39,284:INFO:[01/May/2024:10:10:39] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:10:39,285:INFO:[01/May/2024:10:10:39] ENGINE Bus STOPPING
+2024-05-01 10:10:39,414:INFO:[01/May/2024:10:10:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:10:39,414:INFO:[01/May/2024:10:10:39] ENGINE Bus STOPPED
+2024-05-01 10:10:39,414:INFO:[01/May/2024:10:10:39] ENGINE Bus EXITING
+2024-05-01 10:10:39,414:INFO:[01/May/2024:10:10:39] ENGINE Bus EXITED
+2024-05-01 10:10:39,445:INFO:[01/May/2024:10:10:39] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:10:39,446:INFO:[01/May/2024:10:10:39] ENGINE Re-spawning C:\Program Files\Python312\python.exe C:\Users\71524\PackageMeasurementConversionAPI\main_app.py
+2024-05-01 10:10:39,957:INFO:[01/May/2024:10:10:39] ENGINE Bus STARTING
+2024-05-01 10:10:39,958:INFO:[01/May/2024:10:10:39] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:10:40,170:INFO:[01/May/2024:10:10:40] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:10:40,170:INFO:[01/May/2024:10:10:40] ENGINE Bus STARTED
+2024-05-01 10:12:39,873:INFO:[01/May/2024:10:12:39] ENGINE Restarting because C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py changed.
+2024-05-01 10:12:39,873:INFO:[01/May/2024:10:12:39] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:12:39,873:INFO:[01/May/2024:10:12:39] ENGINE Bus STOPPING
+2024-05-01 10:12:40,059:INFO:[01/May/2024:10:12:40] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:12:40,059:INFO:[01/May/2024:10:12:40] ENGINE Bus STOPPED
+2024-05-01 10:12:40,059:INFO:[01/May/2024:10:12:40] ENGINE Bus EXITING
+2024-05-01 10:12:40,059:INFO:[01/May/2024:10:12:40] ENGINE Bus EXITED
+2024-05-01 10:12:40,154:INFO:[01/May/2024:10:12:40] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:12:40,154:INFO:[01/May/2024:10:12:40] ENGINE Re-spawning C:\Program Files\Python312\python.exe C:\Users\71524\PackageMeasurementConversionAPI\main_app.py
+2024-05-01 10:12:40,347:INFO:[01/May/2024:10:12:40] ENGINE Bus STARTING
+2024-05-01 10:12:40,348:INFO:[01/May/2024:10:12:40] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:12:40,569:INFO:[01/May/2024:10:12:40] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:12:40,570:INFO:[01/May/2024:10:12:40] ENGINE Bus STARTED
+2024-05-01 10:12:40,662:INFO:[01/May/2024:10:12:40] ENGINE Bus STARTING
+2024-05-01 10:12:40,662:INFO:[01/May/2024:10:12:40] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:12:41,789:ERROR:[01/May/2024:10:12:41] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x000002889ACDDD00>>
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\portend.py", line 71, in assert_free
+    list(itertools.starmap(self._connect, info))
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\portend.py", line 87, in _connect
+    raise PortNotFree(tmpl.format(**locals()))
+portend.PortNotFree: Port 8080 is in use on 127.0.0.1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\portend.py", line 126, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 0.0.0.0.
+
+2024-05-01 10:12:41,789:ERROR:[01/May/2024:10:12:41] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 0.0.0.0.')
+
+2024-05-01 10:12:41,789:INFO:[01/May/2024:10:12:41] ENGINE Bus STOPPING
+2024-05-01 10:12:41,789:INFO:[01/May/2024:10:12:41] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) already shut down
+2024-05-01 10:12:41,789:INFO:[01/May/2024:10:12:41] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:12:41,789:INFO:[01/May/2024:10:12:41] ENGINE Bus STOPPED
+2024-05-01 10:12:41,789:INFO:[01/May/2024:10:12:41] ENGINE Bus EXITING
+2024-05-01 10:12:41,789:INFO:[01/May/2024:10:12:41] ENGINE Bus EXITED
+2024-05-01 10:12:46,889:INFO:127.0.0.1 - - [01/May/2024:10:12:46] "GET /bcc HTTP/1.1" 200 75 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:14:57,116:INFO:[01/May/2024:10:14:57] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:14:57,116:INFO:[01/May/2024:10:14:57] ENGINE Bus STOPPING
+2024-05-01 10:14:57,301:INFO:[01/May/2024:10:14:57] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:14:57,301:INFO:[01/May/2024:10:14:57] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:14:57,301:INFO:[01/May/2024:10:14:57] ENGINE Bus STOPPED
+2024-05-01 10:14:57,301:INFO:[01/May/2024:10:14:57] ENGINE Bus EXITING
+2024-05-01 10:14:57,301:INFO:[01/May/2024:10:14:57] ENGINE Bus EXITED
+2024-05-01 10:14:57,301:INFO:[01/May/2024:10:14:57] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:15:17,851:INFO:[01/May/2024:10:15:17] ENGINE Bus STARTING
+2024-05-01 10:15:17,851:INFO:[01/May/2024:10:15:17] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:15:18,066:INFO:[01/May/2024:10:15:18] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:15:18,067:INFO:[01/May/2024:10:15:18] ENGINE Bus STARTED
+2024-05-01 10:15:21,246:INFO:127.0.0.1 - - [01/May/2024:10:15:21] "GET /bcc HTTP/1.1" 200 75 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:15:30,696:INFO:[01/May/2024:10:15:30] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:15:30,697:INFO:[01/May/2024:10:15:30] ENGINE Bus STOPPING
+2024-05-01 10:15:30,856:INFO:[01/May/2024:10:15:30] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:15:30,856:INFO:[01/May/2024:10:15:30] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:15:30,856:INFO:[01/May/2024:10:15:30] ENGINE Bus STOPPED
+2024-05-01 10:15:30,856:INFO:[01/May/2024:10:15:30] ENGINE Bus EXITING
+2024-05-01 10:15:30,856:INFO:[01/May/2024:10:15:30] ENGINE Bus EXITED
+2024-05-01 10:15:30,856:INFO:[01/May/2024:10:15:30] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:15:50,440:INFO:[01/May/2024:10:15:50] ENGINE Bus STARTING
+2024-05-01 10:15:50,440:INFO:[01/May/2024:10:15:50] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:15:50,660:INFO:[01/May/2024:10:15:50] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:15:50,661:INFO:[01/May/2024:10:15:50] ENGINE Bus STARTED
+2024-05-01 10:15:53,747:INFO:127.0.0.1 - - [01/May/2024:10:15:53] "GET /bcc HTTP/1.1" 200 75 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:16:03,082:INFO:[01/May/2024:10:16:03] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:16:03,082:INFO:[01/May/2024:10:16:03] ENGINE Bus STOPPING
+2024-05-01 10:16:03,268:INFO:[01/May/2024:10:16:03] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:16:03,270:INFO:[01/May/2024:10:16:03] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:16:03,270:INFO:[01/May/2024:10:16:03] ENGINE Bus STOPPED
+2024-05-01 10:16:03,270:INFO:[01/May/2024:10:16:03] ENGINE Bus EXITING
+2024-05-01 10:16:03,270:INFO:[01/May/2024:10:16:03] ENGINE Bus EXITED
+2024-05-01 10:16:03,270:INFO:[01/May/2024:10:16:03] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:16:22,403:INFO:[01/May/2024:10:16:22] ENGINE Bus STARTING
+2024-05-01 10:16:22,404:INFO:[01/May/2024:10:16:22] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:16:22,627:INFO:[01/May/2024:10:16:22] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:16:22,629:INFO:[01/May/2024:10:16:22] ENGINE Bus STARTED
+2024-05-01 10:16:24,506:ERROR:[01/May/2024:10:16:24] HTTP 
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\lib\encoding.py", line 223, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 136, in __call__
+    print(model.user_input)
+          ^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'user_input'
+2024-05-01 10:16:24,594:INFO:[01/May/2024:10:16:24] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: PostmanRuntime/7.37.3
+  ACCEPT: */*
+  POSTMAN-TOKEN: b88fe603-927b-494e-9a5a-5adb3fdfc7d3
+  HOST: localhost:8080
+  ACCEPT-ENCODING: gzip, deflate, br
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 31
+2024-05-01 10:16:24,601:INFO:127.0.0.1 - - [01/May/2024:10:16:24] "GET /bcc HTTP/1.1" 500 1864 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:19:25,701:INFO:[01/May/2024:10:19:25] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:19:25,701:INFO:[01/May/2024:10:19:25] ENGINE Bus STOPPING
+2024-05-01 10:19:25,867:INFO:[01/May/2024:10:19:25] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:19:25,867:INFO:[01/May/2024:10:19:25] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:19:25,867:INFO:[01/May/2024:10:19:25] ENGINE Bus STOPPED
+2024-05-01 10:19:25,867:INFO:[01/May/2024:10:19:25] ENGINE Bus EXITING
+2024-05-01 10:19:25,867:INFO:[01/May/2024:10:19:25] ENGINE Bus EXITED
+2024-05-01 10:19:25,867:INFO:[01/May/2024:10:19:25] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:19:26,529:INFO:[01/May/2024:10:19:26] ENGINE Bus STARTING
+2024-05-01 10:19:26,529:INFO:[01/May/2024:10:19:26] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:19:26,771:INFO:[01/May/2024:10:19:26] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:19:26,771:INFO:[01/May/2024:10:19:26] ENGINE Bus STARTED
+2024-05-01 10:19:29,893:ERROR:[01/May/2024:10:19:29] HTTP 
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\lib\encoding.py", line 223, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 136, in __call__
+    model.user_input = user_input
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'user_input'
+2024-05-01 10:19:29,896:INFO:[01/May/2024:10:19:29] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: PostmanRuntime/7.37.3
+  ACCEPT: */*
+  POSTMAN-TOKEN: f6ad5278-c0aa-42cf-a55a-e962c3199b9a
+  HOST: localhost:8080
+  ACCEPT-ENCODING: gzip, deflate, br
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 31
+2024-05-01 10:19:29,897:INFO:127.0.0.1 - - [01/May/2024:10:19:29] "GET /bcc HTTP/1.1" 500 1864 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:20:13,131:INFO:[01/May/2024:10:20:13] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:20:13,131:INFO:[01/May/2024:10:20:13] ENGINE Bus STOPPING
+2024-05-01 10:20:13,329:INFO:[01/May/2024:10:20:13] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:20:13,330:INFO:[01/May/2024:10:20:13] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:20:13,330:INFO:[01/May/2024:10:20:13] ENGINE Bus STOPPED
+2024-05-01 10:20:13,330:INFO:[01/May/2024:10:20:13] ENGINE Bus EXITING
+2024-05-01 10:20:13,330:INFO:[01/May/2024:10:20:13] ENGINE Bus EXITED
+2024-05-01 10:20:13,330:INFO:[01/May/2024:10:20:13] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:20:13,912:INFO:[01/May/2024:10:20:13] ENGINE Bus STARTING
+2024-05-01 10:20:13,913:INFO:[01/May/2024:10:20:13] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:20:14,134:INFO:[01/May/2024:10:20:14] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:20:14,134:INFO:[01/May/2024:10:20:14] ENGINE Bus STARTED
+2024-05-01 10:20:17,992:INFO:127.0.0.1 - - [01/May/2024:10:20:17] "GET /bcc HTTP/1.1" 200 75 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:20:38,708:INFO:[01/May/2024:10:20:38] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:20:38,708:INFO:[01/May/2024:10:20:38] ENGINE Bus STOPPING
+2024-05-01 10:20:38,884:INFO:[01/May/2024:10:20:38] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:20:38,884:INFO:[01/May/2024:10:20:38] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:20:38,884:INFO:[01/May/2024:10:20:38] ENGINE Bus STOPPED
+2024-05-01 10:20:38,884:INFO:[01/May/2024:10:20:38] ENGINE Bus EXITING
+2024-05-01 10:20:38,885:INFO:[01/May/2024:10:20:38] ENGINE Bus EXITED
+2024-05-01 10:20:38,885:INFO:[01/May/2024:10:20:38] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:20:39,564:INFO:[01/May/2024:10:20:39] ENGINE Bus STARTING
+2024-05-01 10:20:39,565:INFO:[01/May/2024:10:20:39] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:20:39,803:INFO:[01/May/2024:10:20:39] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:20:39,803:INFO:[01/May/2024:10:20:39] ENGINE Bus STARTED
+2024-05-01 10:20:42,239:ERROR:[01/May/2024:10:20:42] HTTP 
+Traceback (most recent call last):
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 143, in __call__
+    model.user_input = user_input
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'user_input'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\lib\encoding.py", line 223, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 153, in __call__
+    model.user_input = user_input
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'user_input'
+2024-05-01 10:20:42,241:INFO:[01/May/2024:10:20:42] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: PostmanRuntime/7.37.3
+  ACCEPT: */*
+  POSTMAN-TOKEN: a3a49a23-4531-4361-b1da-880d842273d9
+  HOST: localhost:8080
+  ACCEPT-ENCODING: gzip, deflate, br
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 31
+2024-05-01 10:20:42,241:INFO:127.0.0.1 - - [01/May/2024:10:20:42] "GET /bcc HTTP/1.1" 500 2198 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:20:58,045:INFO:[01/May/2024:10:20:58] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:20:58,045:INFO:[01/May/2024:10:20:58] ENGINE Bus STOPPING
+2024-05-01 10:20:58,195:INFO:[01/May/2024:10:20:58] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:20:58,196:INFO:[01/May/2024:10:20:58] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:20:58,196:INFO:[01/May/2024:10:20:58] ENGINE Bus STOPPED
+2024-05-01 10:20:58,196:INFO:[01/May/2024:10:20:58] ENGINE Bus EXITING
+2024-05-01 10:20:58,196:INFO:[01/May/2024:10:20:58] ENGINE Bus EXITED
+2024-05-01 10:20:58,196:INFO:[01/May/2024:10:20:58] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:20:58,907:INFO:[01/May/2024:10:20:58] ENGINE Bus STARTING
+2024-05-01 10:20:58,908:INFO:[01/May/2024:10:20:58] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:20:59,122:INFO:[01/May/2024:10:20:59] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:20:59,123:INFO:[01/May/2024:10:20:59] ENGINE Bus STARTED
+2024-05-01 10:21:02,471:ERROR:[01/May/2024:10:21:02] HTTP 
+Traceback (most recent call last):
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 144, in __call__
+    model.user_input = user_input
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'user_input'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\lib\encoding.py", line 223, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 154, in __call__
+    model.user_input = user_input
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'user_input'
+2024-05-01 10:21:02,473:INFO:[01/May/2024:10:21:02] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: PostmanRuntime/7.37.3
+  ACCEPT: */*
+  POSTMAN-TOKEN: 10c060c7-dacb-4118-82eb-d078482b1c68
+  HOST: localhost:8080
+  ACCEPT-ENCODING: gzip, deflate, br
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 31
+2024-05-01 10:21:02,475:INFO:127.0.0.1 - - [01/May/2024:10:21:02] "GET /bcc HTTP/1.1" 500 2198 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:21:17,668:ERROR:[01/May/2024:10:21:17] HTTP 
+Traceback (most recent call last):
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 144, in __call__
+    model.user_input = user_input
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'user_input'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\lib\encoding.py", line 223, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 154, in __call__
+    model.user_input = user_input
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'user_input'
+2024-05-01 10:21:17,669:INFO:[01/May/2024:10:21:17] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: PostmanRuntime/7.37.3
+  ACCEPT: */*
+  POSTMAN-TOKEN: 06703987-b295-4962-991e-ed40366df197
+  HOST: localhost:8080
+  ACCEPT-ENCODING: gzip, deflate, br
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 31
+2024-05-01 10:21:17,670:INFO:127.0.0.1 - - [01/May/2024:10:21:17] "GET /bcc HTTP/1.1" 500 2198 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:21:41,751:INFO:[01/May/2024:10:21:41] ENGINE Restarting because C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py changed.
+2024-05-01 10:21:41,751:INFO:[01/May/2024:10:21:41] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:21:41,751:INFO:[01/May/2024:10:21:41] ENGINE Bus STOPPING
+2024-05-01 10:21:41,900:INFO:[01/May/2024:10:21:41] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:21:41,900:INFO:[01/May/2024:10:21:41] ENGINE Bus STOPPED
+2024-05-01 10:21:41,900:INFO:[01/May/2024:10:21:41] ENGINE Bus EXITING
+2024-05-01 10:21:41,900:INFO:[01/May/2024:10:21:41] ENGINE Bus EXITED
+2024-05-01 10:21:41,957:INFO:[01/May/2024:10:21:41] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:21:41,957:INFO:[01/May/2024:10:21:41] ENGINE Re-spawning C:\Program Files\Python312\python.exe C:\Users\71524\PackageMeasurementConversionAPI\main_app.py
+2024-05-01 10:21:42,495:INFO:[01/May/2024:10:21:42] ENGINE Bus STARTING
+2024-05-01 10:21:42,496:INFO:[01/May/2024:10:21:42] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:21:42,718:INFO:[01/May/2024:10:21:42] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:21:42,718:INFO:[01/May/2024:10:21:42] ENGINE Bus STARTED
+2024-05-01 10:21:43,945:INFO:[01/May/2024:10:21:43] ENGINE Bus STARTING
+2024-05-01 10:21:43,946:INFO:[01/May/2024:10:21:43] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:21:45,109:ERROR:[01/May/2024:10:21:45] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x0000015FBF82EBD0>>
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\portend.py", line 71, in assert_free
+    list(itertools.starmap(self._connect, info))
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\portend.py", line 87, in _connect
+    raise PortNotFree(tmpl.format(**locals()))
+portend.PortNotFree: Port 8080 is in use on 127.0.0.1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\portend.py", line 126, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 0.0.0.0.
+
+2024-05-01 10:21:45,109:ERROR:[01/May/2024:10:21:45] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 0.0.0.0.')
+
+2024-05-01 10:21:45,109:INFO:[01/May/2024:10:21:45] ENGINE Bus STOPPING
+2024-05-01 10:21:45,109:INFO:[01/May/2024:10:21:45] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) already shut down
+2024-05-01 10:21:45,110:INFO:[01/May/2024:10:21:45] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:21:45,110:INFO:[01/May/2024:10:21:45] ENGINE Bus STOPPED
+2024-05-01 10:21:45,110:INFO:[01/May/2024:10:21:45] ENGINE Bus EXITING
+2024-05-01 10:21:45,110:INFO:[01/May/2024:10:21:45] ENGINE Bus EXITED
+2024-05-01 10:22:11,529:INFO:[01/May/2024:10:22:11] ENGINE Bus STARTING
+2024-05-01 10:22:11,530:INFO:[01/May/2024:10:22:11] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:22:11,744:INFO:[01/May/2024:10:22:11] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:22:11,744:INFO:[01/May/2024:10:22:11] ENGINE Bus STARTED
+2024-05-01 10:22:15,303:ERROR:[01/May/2024:10:22:15] HTTP 
+Traceback (most recent call last):
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 145, in __call__
+    model.converted_result = converted_result
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'converted_result'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\lib\encoding.py", line 223, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 154, in __call__
+    model.user_input = user_input
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'user_input'
+2024-05-01 10:22:15,305:INFO:[01/May/2024:10:22:15] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: PostmanRuntime/7.37.3
+  ACCEPT: */*
+  POSTMAN-TOKEN: 84c212c6-6e1d-4b6e-b1a7-277ad2c813c0
+  HOST: localhost:8080
+  ACCEPT-ENCODING: gzip, deflate, br
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 31
+2024-05-01 10:22:15,306:INFO:127.0.0.1 - - [01/May/2024:10:22:15] "GET /bcc HTTP/1.1" 500 2222 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:23:56,565:INFO:[01/May/2024:10:23:56] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:23:56,565:INFO:[01/May/2024:10:23:56] ENGINE Bus STOPPING
+2024-05-01 10:23:56,728:INFO:[01/May/2024:10:23:56] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:23:56,728:INFO:[01/May/2024:10:23:56] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:23:56,729:INFO:[01/May/2024:10:23:56] ENGINE Bus STOPPED
+2024-05-01 10:23:56,729:INFO:[01/May/2024:10:23:56] ENGINE Bus EXITING
+2024-05-01 10:23:56,729:INFO:[01/May/2024:10:23:56] ENGINE Bus EXITED
+2024-05-01 10:23:56,729:INFO:[01/May/2024:10:23:56] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:23:57,416:INFO:[01/May/2024:10:23:57] ENGINE Bus STARTING
+2024-05-01 10:23:57,417:INFO:[01/May/2024:10:23:57] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:23:57,655:INFO:[01/May/2024:10:23:57] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:23:57,656:INFO:[01/May/2024:10:23:57] ENGINE Bus STARTED
+2024-05-01 10:23:59,990:ERROR:[01/May/2024:10:23:59] HTTP 
+Traceback (most recent call last):
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 145, in __call__
+    m.converted_result = converted_result
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'converted_result'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\lib\encoding.py", line 223, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 154, in __call__
+    m.user_input = user_input
+    ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'user_input'
+2024-05-01 10:23:59,994:INFO:[01/May/2024:10:23:59] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: PostmanRuntime/7.37.3
+  ACCEPT: */*
+  POSTMAN-TOKEN: c40dc57d-78ad-4dbb-96ab-e6db672c9f96
+  HOST: localhost:8080
+  ACCEPT-ENCODING: gzip, deflate, br
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 31
+2024-05-01 10:23:59,995:INFO:127.0.0.1 - - [01/May/2024:10:23:59] "GET /bcc HTTP/1.1" 500 2206 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:24:56,259:INFO:[01/May/2024:10:24:56] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:24:56,259:INFO:[01/May/2024:10:24:56] ENGINE Bus STOPPING
+2024-05-01 10:24:56,423:INFO:[01/May/2024:10:24:56] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:24:56,423:INFO:[01/May/2024:10:24:56] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:24:56,424:INFO:[01/May/2024:10:24:56] ENGINE Bus STOPPED
+2024-05-01 10:24:56,424:INFO:[01/May/2024:10:24:56] ENGINE Bus EXITING
+2024-05-01 10:24:56,424:INFO:[01/May/2024:10:24:56] ENGINE Bus EXITED
+2024-05-01 10:24:56,424:INFO:[01/May/2024:10:24:56] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:24:57,109:INFO:[01/May/2024:10:24:57] ENGINE Bus STARTING
+2024-05-01 10:24:57,109:INFO:[01/May/2024:10:24:57] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:24:57,320:INFO:[01/May/2024:10:24:57] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:24:57,321:INFO:[01/May/2024:10:24:57] ENGINE Bus STARTED
+2024-05-01 10:24:59,593:ERROR:[01/May/2024:10:24:59] HTTP 
+Traceback (most recent call last):
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 148, in __call__
+    self.dbops.save_to_db(m, converted_result)
+  File "C:\Users\71524\PackageMeasurementConversionAPI\utilis\database_operations.py", line 30, in save_to_db
+    (m.user_input, m.converted_result, m.status, ""))
+     ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'user_input'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\lib\encoding.py", line 223, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 154, in __call__
+    m.user_input = user_input
+    ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'user_input'
+2024-05-01 10:24:59,595:INFO:[01/May/2024:10:24:59] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: PostmanRuntime/7.37.3
+  ACCEPT: */*
+  POSTMAN-TOKEN: b2d39e0c-f659-4ff1-bb65-f82102d7e397
+  HOST: localhost:8080
+  ACCEPT-ENCODING: gzip, deflate, br
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 31
+2024-05-01 10:24:59,597:INFO:127.0.0.1 - - [01/May/2024:10:24:59] "GET /bcc HTTP/1.1" 500 2364 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:25:42,321:INFO:[01/May/2024:10:25:42] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:25:42,322:INFO:[01/May/2024:10:25:42] ENGINE Bus STOPPING
+2024-05-01 10:25:42,485:INFO:[01/May/2024:10:25:42] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:25:42,485:INFO:[01/May/2024:10:25:42] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:25:42,485:INFO:[01/May/2024:10:25:42] ENGINE Bus STOPPED
+2024-05-01 10:25:42,485:INFO:[01/May/2024:10:25:42] ENGINE Bus EXITING
+2024-05-01 10:25:42,485:INFO:[01/May/2024:10:25:42] ENGINE Bus EXITED
+2024-05-01 10:25:42,485:INFO:[01/May/2024:10:25:42] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:31:31,685:INFO:[01/May/2024:10:31:31] ENGINE Bus STARTING
+2024-05-01 10:31:31,686:INFO:[01/May/2024:10:31:31] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:31:31,899:INFO:[01/May/2024:10:31:31] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:31:31,900:INFO:[01/May/2024:10:31:31] ENGINE Bus STARTED
+2024-05-01 10:31:35,279:ERROR:[01/May/2024:10:31:35] HTTP 
+Traceback (most recent call last):
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 148, in __call__
+    self.dbops.save_to_db(m, converted_result)
+  File "C:\Users\71524\PackageMeasurementConversionAPI\utilis\database_operations.py", line 30, in save_to_db
+    (m.user_input, m.converted_result, m.status, ""))
+     ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'user_input'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\lib\encoding.py", line 223, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71524\PackageMeasurementConversionAPI\controller\conversion_controller.py", line 154, in __call__
+    m.user_input = user_input
+    ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'user_input'
+2024-05-01 10:31:35,387:INFO:[01/May/2024:10:31:35] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  USER-AGENT: PostmanRuntime/7.37.3
+  ACCEPT: */*
+  POSTMAN-TOKEN: 2980cdd4-db00-4364-9e2b-f6e1be649984
+  HOST: localhost:8080
+  ACCEPT-ENCODING: gzip, deflate, br
+  CONNECTION: keep-alive
+  Content-Type: application/json
+  Content-Length: 31
+2024-05-01 10:31:35,391:INFO:127.0.0.1 - - [01/May/2024:10:31:35] "GET /bcc HTTP/1.1" 500 2364 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:34:57,758:INFO:[01/May/2024:10:34:57] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:34:57,759:INFO:[01/May/2024:10:34:57] ENGINE Bus STOPPING
+2024-05-01 10:34:57,889:INFO:[01/May/2024:10:34:57] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:34:57,889:INFO:[01/May/2024:10:34:57] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:34:57,889:INFO:[01/May/2024:10:34:57] ENGINE Bus STOPPED
+2024-05-01 10:34:57,889:INFO:[01/May/2024:10:34:57] ENGINE Bus EXITING
+2024-05-01 10:34:57,889:INFO:[01/May/2024:10:34:57] ENGINE Bus EXITED
+2024-05-01 10:34:57,889:INFO:[01/May/2024:10:34:57] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:34:58,444:INFO:[01/May/2024:10:34:58] ENGINE Bus STARTING
+2024-05-01 10:34:58,445:INFO:[01/May/2024:10:34:58] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:34:58,676:INFO:[01/May/2024:10:34:58] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:34:58,677:INFO:[01/May/2024:10:34:58] ENGINE Bus STARTED
+2024-05-01 10:35:01,650:INFO:127.0.0.1 - - [01/May/2024:10:35:01] "GET /bcc HTTP/1.1" 200 103 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:35:37,055:INFO:[01/May/2024:10:35:37] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:35:37,055:INFO:[01/May/2024:10:35:37] ENGINE Bus STOPPING
+2024-05-01 10:35:37,241:INFO:[01/May/2024:10:35:37] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:35:37,241:INFO:[01/May/2024:10:35:37] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:35:37,241:INFO:[01/May/2024:10:35:37] ENGINE Bus STOPPED
+2024-05-01 10:35:37,241:INFO:[01/May/2024:10:35:37] ENGINE Bus EXITING
+2024-05-01 10:35:37,241:INFO:[01/May/2024:10:35:37] ENGINE Bus EXITED
+2024-05-01 10:35:37,241:INFO:[01/May/2024:10:35:37] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:35:37,914:INFO:[01/May/2024:10:35:37] ENGINE Bus STARTING
+2024-05-01 10:35:37,916:INFO:[01/May/2024:10:35:37] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:35:38,130:INFO:[01/May/2024:10:35:38] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 10:35:38,130:INFO:[01/May/2024:10:35:38] ENGINE Bus STARTED
+2024-05-01 10:35:40,642:INFO:127.0.0.1 - - [01/May/2024:10:35:40] "GET /bcc HTTP/1.1" 200 51 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:35:47,852:INFO:127.0.0.1 - - [01/May/2024:10:35:47] "GET /abbcc HTTP/1.1" 200 54 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:35:51,611:INFO:127.0.0.1 - - [01/May/2024:10:35:51] "GET /aaa HTTP/1.1" 200 63 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:35:54,219:INFO:127.0.0.1 - - [01/May/2024:10:35:54] "GET /aa HTTP/1.1" 200 51 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:35:56,738:INFO:127.0.0.1 - - [01/May/2024:10:35:56] "GET /ge HTTP/1.1" 200 63 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:35:59,279:INFO:127.0.0.1 - - [01/May/2024:10:35:59] "GET /get_history HTTP/1.1" 200 2080 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:36:08,049:INFO:[01/May/2024:10:36:08] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:36:08,049:INFO:[01/May/2024:10:36:08] ENGINE Bus STOPPING
+2024-05-01 10:36:08,222:INFO:[01/May/2024:10:36:08] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 10:36:08,222:INFO:[01/May/2024:10:36:08] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:36:08,222:INFO:[01/May/2024:10:36:08] ENGINE Bus STOPPED
+2024-05-01 10:36:08,222:INFO:[01/May/2024:10:36:08] ENGINE Bus EXITING
+2024-05-01 10:36:08,222:INFO:[01/May/2024:10:36:08] ENGINE Bus EXITED
+2024-05-01 10:36:08,222:INFO:[01/May/2024:10:36:08] ENGINE Waiting for child threads to terminate...

@@ -1,6 +1,6 @@
 import unittest
 
-from models.conversion import Conversion
+from services.conversion_service import Conversion
 
 
 class TestConversion(unittest.TestCase):
