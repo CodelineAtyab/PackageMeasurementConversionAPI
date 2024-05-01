@@ -425,3 +425,56 @@ Request Headers:
 [01/May/2024:08:57:27] ENGINE Bus EXITING
 [01/May/2024:08:57:27] ENGINE Bus EXITED
 [01/May/2024:08:57:27] ENGINE Waiting for child threads to terminate...
+[01/May/2024:09:14:16] ENGINE Bus STARTING
+[01/May/2024:09:14:16] ENGINE Started monitor thread 'Autoreloader'.
+[01/May/2024:09:14:16] ENGINE Serving on http://0.0.0.0:8080
+[01/May/2024:09:14:16] ENGINE Bus STARTED
+127.0.0.1 - - [01/May/2024:09:14:20] "GET /api/sequence/abbcc HTTP/1.1" 200 37 "" "PostmanRuntime/7.37.3"
+[01/May/2024:09:17:55] ENGINE Keyboard Interrupt: shutting down bus
+[01/May/2024:09:17:55] ENGINE Bus STOPPING
+[01/May/2024:09:17:55] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[01/May/2024:09:17:55] ENGINE Stopped thread 'Autoreloader'.
+[01/May/2024:09:17:55] ENGINE Bus STOPPED
+[01/May/2024:09:17:55] ENGINE Bus EXITING
+[01/May/2024:09:17:55] ENGINE Bus EXITED
+[01/May/2024:09:17:55] ENGINE Waiting for child threads to terminate...
+[01/May/2024:09:21:21] ENGINE Bus STARTING
+[01/May/2024:09:21:21] ENGINE Started monitor thread 'Autoreloader'.
+[01/May/2024:09:21:22] ENGINE Serving on http://0.0.0.0:8080
+[01/May/2024:09:21:22] ENGINE Bus STARTED
+127.0.0.1 - - [01/May/2024:09:21:27] "GET /api/sequence/abbcc HTTP/1.1" 200 37 "" "PostmanRuntime/7.37.3"
+[01/May/2024:09:21:30] ENGINE Keyboard Interrupt: shutting down bus
+[01/May/2024:09:21:30] ENGINE Bus STOPPING
+[01/May/2024:09:21:30] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[01/May/2024:09:21:30] ENGINE Stopped thread 'Autoreloader'.
+[01/May/2024:09:21:30] ENGINE Bus STOPPED
+[01/May/2024:09:21:30] ENGINE Bus EXITING
+[01/May/2024:09:21:30] ENGINE Bus EXITED
+[01/May/2024:09:21:30] ENGINE Waiting for child threads to terminate...
+[01/May/2024:09:21:42] ENGINE Bus STARTING
+[01/May/2024:09:21:42] ENGINE Started monitor thread 'Autoreloader'.
+[01/May/2024:09:21:42] ENGINE Serving on http://0.0.0.0:8888
+[01/May/2024:09:21:42] ENGINE Bus STARTED
+127.0.0.1 - - [01/May/2024:09:21:50] "GET /api/sequence/abbcc HTTP/1.1" 200 37 "" "PostmanRuntime/7.37.3"
+127.0.0.1 - - [01/May/2024:09:21:54] "GET /api/sequence/abbas HTTP/1.1" 200 38 "" "PostmanRuntime/7.37.3"
+[01/May/2024:09:22:07] ENGINE Keyboard Interrupt: shutting down bus
+[01/May/2024:09:22:07] ENGINE Bus STOPPING
+[01/May/2024:09:22:07] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8888)) shut down
+[01/May/2024:09:22:07] ENGINE Stopped thread 'Autoreloader'.
+[01/May/2024:09:22:07] ENGINE Bus STOPPED
+[01/May/2024:09:22:07] ENGINE Bus EXITING
+[01/May/2024:09:22:07] ENGINE Bus EXITED
+[01/May/2024:09:22:07] ENGINE Waiting for child threads to terminate...
+[01/May/2024:09:22:10] ENGINE Bus STARTING
+[01/May/2024:09:22:10] ENGINE Started monitor thread 'Autoreloader'.
+[01/May/2024:09:22:10] ENGINE Serving on http://0.0.0.0:8080
+[01/May/2024:09:22:10] ENGINE Bus STARTED
+127.0.0.1 - - [01/May/2024:09:22:14] "GET /api/sequence/abbcc HTTP/1.1" 200 37 "" "PostmanRuntime/7.37.3"
+[01/May/2024:09:22:18] ENGINE Keyboard Interrupt: shutting down bus
+[01/May/2024:09:22:18] ENGINE Bus STOPPING
+[01/May/2024:09:22:18] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[01/May/2024:09:22:18] ENGINE Stopped thread 'Autoreloader'.
+[01/May/2024:09:22:18] ENGINE Bus STOPPED
+[01/May/2024:09:22:18] ENGINE Bus EXITING
+[01/May/2024:09:22:18] ENGINE Bus EXITED
+[01/May/2024:09:22:18] ENGINE Waiting for child threads to terminate...
