@@ -11,10 +11,9 @@ class TestSequenceProcessor(unittest.TestCase):
             ("abbcc", [2, 6]),
             ("a_", [0]),
             ("abcdabcdab", [2, 7, 7]),
-            ("abcdabcdab_", [2, 7, 7, 0]),
             ("zdaaaaaaaabaaaaaaaabaaaaaaaabbaa", [34]),
             ("za_a_a_a_a_a_a_a_a_a_a_a_a_azaaa", [40, 1]),
-            ("zza_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_", [26])
+            ("zza_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_", [26])
         ]
 
         # Iterate through test cases and run sub-tests

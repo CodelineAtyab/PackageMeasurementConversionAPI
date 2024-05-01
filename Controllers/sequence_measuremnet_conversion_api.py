@@ -3,6 +3,7 @@ import logging
 from Services.sequence_processor import sequence_compressor
 from Models.sequence_history import SequenceHistory
 
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 

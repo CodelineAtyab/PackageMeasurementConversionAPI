@@ -90,19 +90,9 @@ GET http://localhost:8080/get-history
 
 ## Testing
 
-1. Execute the following test cases:
+1. Execute the test cases in the following:
 
-```python
-print(pmc("dz_a_aazzaaa"))  # Output: [28, 53, 1]
-print(pmc("za_a_a_a_a_a_a_a_a_a_a_a_a_azaaa"))  # Output: [40, 1]
-print(pmc("aa"))  # Output: [1]
-print(pmc("abbcc"))  # Output: [2, 6]
-print(pmc("a_"))  # Output: [0]
-print(pmc("abcdabcdab"))  # Output: [2, 7, 7]
-print(pmc("abcdabcdab_"))  # Output: [2, 7, 7, 0]
-print(pmc("zdaaaaaaaabaaaaaaaabaaaaaaaabbaa"))  # Output: [34]
-print(pmc("za_a_a_a_a_a_a_a_a_a_a_a_a_azaaa"))  # Output: [40, 1]
-print(pmc("zza_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_"))  # Output: [26]
+``` python -m unittest .\tests\test_sequence_processor.py 
 
 
 License
