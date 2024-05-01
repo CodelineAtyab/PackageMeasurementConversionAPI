@@ -1,5 +1,5 @@
 import unittest
-from logic import convert_measurements
+from services.measurement_service import convert_measurements
 
 class TestConvertMeasurements(unittest.TestCase):
     """
