@@ -17,7 +17,7 @@ In the encoding format, the letter 'z' represents a value greater than 26. When 
 
 1. Clone the repository to your local machine:
 
-git clone <repository-url>
+git clone https://github.com/jnulia/PackageMeasurementConversionAPI.git
 
 
 2. Install dependencies:
@@ -105,4 +105,5 @@ print(pmc("za_a_a_a_a_a_a_a_a_a_a_a_a_azaaa"))  # Output: [40, 1]
 print(pmc("zza_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_"))  # Output: [26]
 
 
-
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
