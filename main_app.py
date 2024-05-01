@@ -4,6 +4,7 @@ import sys
 
 from src.controller.sequence_controller import SequenceAPI
 
+
 class Root(object):
     @cherrypy.expose
     def index(self):
@@ -12,6 +13,7 @@ class Root(object):
         We don't need to implement it since it is configured and cherrypy is going to handle it.
         """
         pass
+
 
 def setup_server(port=8080):
     # Set up logging
@@ -50,6 +52,7 @@ def setup_server(port=8080):
     # Start the CherryPy server
     cherrypy.engine.start()
     cherrypy.engine.block()
+
 
 if __name__ == "__main__":
     # Default port is 8080 unless specified

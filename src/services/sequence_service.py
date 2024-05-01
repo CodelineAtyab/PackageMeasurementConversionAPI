@@ -7,7 +7,7 @@ class SequenceService:
     def __init__(self, storage_format):
         self.file_handler = FileHandler(storage_format=storage_format)
 
-    def process_and_store_string(self, input_string):
+    def input_service(self, input_string):
         """
         Takes an input string, processes it using StringProcessor, and stores the results.
         """
@@ -28,5 +28,5 @@ class SequenceService:
 if __name__ == "__main__":
     sequence_service = SequenceService(storage_format='db')
     test_string = 'dz_a_aazzaaa'
-    results, formatted = sequence_service.process_and_store_string(test_string)
+    results, formatted = sequence_service.input_service(test_string)
     print(f"Processed Results: {results}, Formatted and Stored: {formatted}")

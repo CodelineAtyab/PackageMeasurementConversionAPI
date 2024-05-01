@@ -5,7 +5,7 @@ from src.models.sequence import Sequence
 from src.services.sequence_service import SequenceService
 from src.utils.File_Handler import FileHandler
 from src.services.sequence_processor import SequenceProcessor
-from src.models.sequence_history import SequenceHistoryModel
+from src.utils.sequence_history import SequenceHistoryModel
 
 
 class SequenceAPI(object):
@@ -25,7 +25,7 @@ class SequenceAPI(object):
                 processed_results = processor.create_result()
 
                 res_msg = {"status": "SUCCESS", "data": processed_results}
-                sequence.process_and_store_string(input_string)
+                sequence.input_service(input_string)
 
             else:
                 sequencehistory = SequenceHistoryModel()
