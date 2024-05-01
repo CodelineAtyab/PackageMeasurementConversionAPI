@@ -1,5 +1,5 @@
 import unittest
-from models.measurement_converter import MeasurementConverter
+from services.measurement_converter import MeasurementConverter
 
 
 class TestMeasurementConverter(unittest.TestCase):

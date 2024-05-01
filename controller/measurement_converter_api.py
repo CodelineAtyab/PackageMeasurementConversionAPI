@@ -1,6 +1,6 @@
 import cherrypy
-from models.measurement_converter import MeasurementConverter
-from models.measurement_converter_db import MeasurementConverterDB
+from services.measurement_converter import MeasurementConverter
+from services.measurement_converter_db import MeasurementConverterDB
 
 class MeasurementConverterAPI(object):
     
