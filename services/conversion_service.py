@@ -50,11 +50,16 @@ class Conversion:
         :param input_string: A sequence of characters
         :return: A result list containing the converted values
         """
+        input_string = input_string.strip()
+        allowed_characters = set("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_ ")
+        for char in input_string:
+            if char not in allowed_characters:
+                return []
         char_list = [self.char_value(input_string[i]) for i in range(len(input_string))]
         result_list = []
         merged_list = self.get_merged_list(char_list)
         if merged_list == 'Invalid':
-            return "Invalid input"
+            return []
         else:
             while merged_list:
                 counter = merged_list[0]
@@ -62,7 +67,7 @@ class Conversion:
                     result_list.append(0)
                     merged_list = []
                 elif counter >= len(merged_list) or len(merged_list) < 1:
-                    return "Invalid input"
+                    return []
                 else:
                     merged_list.pop(0)
                     result_list.append(sum(merged_list[0:counter]))
@@ -71,10 +76,10 @@ class Conversion:
         if result_list and len(merged_list) == 0:
             return result_list
         else:
-            return f"Invalid input"
+            return []
 
 # # Check that the conversion is correct
 # user_string = Conversion()
-# print(user_string.converted_string("abbcc"))
+# print(user_string.converted_string("    "))
 
 

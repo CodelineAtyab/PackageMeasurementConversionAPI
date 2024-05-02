@@ -58,19 +58,19 @@ class TestConversion(unittest.TestCase):
 
     def test_invalid_string(self):
         user_string = Conversion()
-        self.assertEqual(user_string.converted_string('aaa'), "Invalid input")
+        self.assertEqual(user_string.converted_string('aaa'), [])
 
     def test_empty_string(self):
         user_string = Conversion()
-        self.assertEqual(user_string.converted_string(''), "Invalid input")
+        self.assertEqual(user_string.converted_string(''), [])
 
     def test_single_letter_string(self):
         user_string = Conversion()
-        self.assertEqual(user_string.converted_string('a'), "Invalid input")
+        self.assertEqual(user_string.converted_string('a'), [])
 
     def test_invalid_length_string(self):
         user_string = Conversion()
-        self.assertEqual(user_string.converted_string('abccc'), "Invalid input")
+        self.assertEqual(user_string.converted_string('   '), [])
 
 
 if __name__ == "__main__":
