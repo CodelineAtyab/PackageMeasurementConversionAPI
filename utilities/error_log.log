@@ -1,0 +1,217 @@
+2024-05-01 17:30:30,846:INFO:[01/May/2024:17:30:30] ENGINE Bus STARTING
+2024-05-01 17:30:30,848:INFO:[01/May/2024:17:30:30] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 17:30:31,082:INFO:[01/May/2024:17:30:31] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 17:30:31,083:INFO:[01/May/2024:17:30:31] ENGINE Bus STARTED
+2024-05-01 17:31:19,093:INFO:127.0.0.1 - - [01/May/2024:17:31:19] "GET /convert_measurements?input=aa HTTP/1.1" 200 3 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-01 17:31:26,027:INFO:127.0.0.1 - - [01/May/2024:17:31:26] "GET /convert_measurements?input=abbcc HTTP/1.1" 200 6 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-01 17:31:50,616:INFO:[01/May/2024:17:31:50] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 17:31:50,616:INFO:[01/May/2024:17:31:50] ENGINE Bus STOPPING
+2024-05-01 17:31:50,786:INFO:[01/May/2024:17:31:50] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 17:31:50,786:INFO:[01/May/2024:17:31:50] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 17:31:50,786:INFO:[01/May/2024:17:31:50] ENGINE Bus STOPPED
+2024-05-01 17:31:50,786:INFO:[01/May/2024:17:31:50] ENGINE Bus EXITING
+2024-05-01 17:31:50,786:INFO:[01/May/2024:17:31:50] ENGINE Bus EXITED
+2024-05-01 17:31:50,786:INFO:[01/May/2024:17:31:50] ENGINE Waiting for child threads to terminate...
+2024-05-01 19:42:48,626:INFO:[01/May/2024:19:42:48] ENGINE Bus STARTING
+2024-05-01 19:42:48,627:INFO:[01/May/2024:19:42:48] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 19:42:48,849:INFO:[01/May/2024:19:42:48] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 19:42:48,849:INFO:[01/May/2024:19:42:48] ENGINE Bus STARTED
+2024-05-01 19:43:46,136:INFO:127.0.0.1 - - [01/May/2024:19:43:46] "GET /aa HTTP/1.1" 404 1522 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-01 19:43:50,617:INFO:127.0.0.1 - - [01/May/2024:19:43:50] "GET /convert_measurements/aa HTTP/1.1" 500 121 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-01 19:44:07,455:INFO:127.0.0.1 - - [01/May/2024:19:44:07] "GET /convert_measurements?input=abbcc HTTP/1.1" 500 121 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-01 19:44:16,666:INFO:127.0.0.1 - - [01/May/2024:19:44:16] "GET /convert_measurements HTTP/1.1" 500 121 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-01 19:45:00,398:INFO:[01/May/2024:19:45:00] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 19:45:00,398:INFO:[01/May/2024:19:45:00] ENGINE Bus STOPPING
+2024-05-01 19:45:00,531:INFO:[01/May/2024:19:45:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 19:45:00,532:INFO:[01/May/2024:19:45:00] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 19:45:00,532:INFO:[01/May/2024:19:45:00] ENGINE Bus STOPPED
+2024-05-01 19:45:00,532:INFO:[01/May/2024:19:45:00] ENGINE Bus EXITING
+2024-05-01 19:45:00,532:INFO:[01/May/2024:19:45:00] ENGINE Bus EXITED
+2024-05-01 19:45:00,532:INFO:[01/May/2024:19:45:00] ENGINE Waiting for child threads to terminate...
+2024-05-01 19:58:50,913:INFO:[01/May/2024:19:58:50] ENGINE Bus STARTING
+2024-05-01 19:58:50,914:INFO:[01/May/2024:19:58:50] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 19:58:51,147:INFO:[01/May/2024:19:58:51] ENGINE Serving on http://0.0.0.0:8080
+2024-05-01 19:58:51,147:INFO:[01/May/2024:19:58:51] ENGINE Bus STARTED
+2024-05-01 19:58:56,733:INFO:127.0.0.1 - - [01/May/2024:19:58:56] "GET /convert_measurements HTTP/1.1" 200 48 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-01 19:59:01,734:INFO:127.0.0.1 - - [01/May/2024:19:59:01] "GET /convert_measurements?input=abbcc HTTP/1.1" 200 52 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-01 19:59:07,260:INFO:127.0.0.1 - - [01/May/2024:19:59:07] "GET /convert_measurements?input=aa HTTP/1.1" 200 49 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-01 19:59:13,194:INFO:[01/May/2024:19:59:13] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 19:59:13,194:INFO:[01/May/2024:19:59:13] ENGINE Bus STOPPING
+2024-05-01 19:59:13,344:INFO:[01/May/2024:19:59:13] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-01 19:59:13,344:INFO:[01/May/2024:19:59:13] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 19:59:13,345:INFO:[01/May/2024:19:59:13] ENGINE Bus STOPPED
+2024-05-01 19:59:13,345:INFO:[01/May/2024:19:59:13] ENGINE Bus EXITING
+2024-05-01 19:59:13,345:INFO:[01/May/2024:19:59:13] ENGINE Bus EXITED
+2024-05-01 19:59:13,345:INFO:[01/May/2024:19:59:13] ENGINE Waiting for child threads to terminate...
+2024-05-02 08:47:24,168:CRITICAL:Failed to start server: 
+Traceback (most recent call last):
+  File "C:\Users\71521\Desktop\Eval\PackageMeasurementConversionAPI\main.py", line 22, in start_server
+    cherrypy.tree.mount(ConverterAPI(), '/')
+                        ^^^^^^^^^^^^^^
+  File "C:\Users\71521\Desktop\Eval\PackageMeasurementConversionAPI\controller\controller.py", line 12, in __init__
+    self.sequence_history = PackageMeasurementHistory('./utilis/converter.db')
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71521\Desktop\Eval\PackageMeasurementConversionAPI\utilities\db.py", line 10, in __init__
+    self.create_table()
+  File "C:\Users\71521\Desktop\Eval\PackageMeasurementConversionAPI\utilities\db.py", line 13, in create_table
+    with sqlite3.connect(self.db_path) as conn:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: unable to open database file
+2024-05-02 08:48:23,123:INFO:[02/May/2024:08:48:23] ENGINE Bus STARTING
+2024-05-02 08:48:23,124:INFO:[02/May/2024:08:48:23] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 08:48:23,353:INFO:[02/May/2024:08:48:23] ENGINE Serving on http://0.0.0.0:8080
+2024-05-02 08:48:23,353:INFO:[02/May/2024:08:48:23] ENGINE Bus STARTED
+2024-05-02 08:49:01,884:INFO:127.0.0.1 - - [02/May/2024:08:49:01] "GET /convert_measurements?input_str=aa HTTP/1.1" 404 2619 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 08:49:09,511:INFO:127.0.0.1 - - [02/May/2024:08:49:09] "GET /convert_measurements?input=aa HTTP/1.1" 200 49 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 08:49:43,854:INFO:[02/May/2024:08:49:43] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-02 08:49:43,854:INFO:[02/May/2024:08:49:43] ENGINE Bus STOPPING
+2024-05-02 08:49:44,027:INFO:[02/May/2024:08:49:44] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-02 08:49:44,027:INFO:[02/May/2024:08:49:44] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 08:49:44,027:INFO:[02/May/2024:08:49:44] ENGINE Bus STOPPED
+2024-05-02 08:49:44,027:INFO:[02/May/2024:08:49:44] ENGINE Bus EXITING
+2024-05-02 08:49:44,028:INFO:[02/May/2024:08:49:44] ENGINE Bus EXITED
+2024-05-02 08:49:44,028:INFO:[02/May/2024:08:49:44] ENGINE Waiting for child threads to terminate...
+2024-05-02 08:52:16,313:INFO:[02/May/2024:08:52:16] ENGINE Bus STARTING
+2024-05-02 08:52:16,314:INFO:[02/May/2024:08:52:16] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 08:52:16,534:INFO:[02/May/2024:08:52:16] ENGINE Serving on http://0.0.0.0:8080
+2024-05-02 08:52:16,534:INFO:[02/May/2024:08:52:16] ENGINE Bus STARTED
+2024-05-02 08:52:18,158:INFO:127.0.0.1 - - [02/May/2024:08:52:18] "GET /convert_measurements?input=aa HTTP/1.1" 200 36 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 08:52:21,590:INFO:127.0.0.1 - - [02/May/2024:08:52:21] "GET /convert_measurements?input=aa HTTP/1.1" 200 36 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 08:52:26,028:INFO:127.0.0.1 - - [02/May/2024:08:52:26] "GET /convert_measurements?input=aaa HTTP/1.1" 200 39 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 08:52:32,388:INFO:127.0.0.1 - - [02/May/2024:08:52:32] "GET /convert_measurements?input=a HTTP/1.1" 200 36 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 08:52:38,356:INFO:127.0.0.1 - - [02/May/2024:08:52:38] "GET /convert_measurements?input=_ HTTP/1.1" 200 36 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 08:52:42,612:INFO:127.0.0.1 - - [02/May/2024:08:52:42] "GET /convert_measurements?input=__ HTTP/1.1" 200 36 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 08:52:47,756:INFO:127.0.0.1 - - [02/May/2024:08:52:47] "GET /convert_measurements?input=__adskjdksaf HTTP/1.1" 200 36 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 08:52:53,944:INFO:127.0.0.1 - - [02/May/2024:08:52:53] "GET /convert_measurements?input=knfljwnf HTTP/1.1" 200 36 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 08:52:58,624:INFO:127.0.0.1 - - [02/May/2024:08:52:58] "GET /convert_measurements?input=abbcc HTTP/1.1" 200 39 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 08:53:02,377:INFO:127.0.0.1 - - [02/May/2024:08:53:02] "GET /convert_measurements?input=ndfjsanfjs HTTP/1.1" 200 36 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 08:53:21,267:INFO:127.0.0.1 - - [02/May/2024:08:53:21] "GET /convert_measurements?input=aa HTTP/1.1" 200 36 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 08:54:50,291:INFO:[02/May/2024:08:54:50] ENGINE Restarting because C:\Users\71521\Desktop\Eval\PackageMeasurementConversionAPI\controller\controller.py changed.
+2024-05-02 08:54:50,291:INFO:[02/May/2024:08:54:50] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 08:54:50,291:INFO:[02/May/2024:08:54:50] ENGINE Bus STOPPING
+2024-05-02 08:54:50,442:INFO:[02/May/2024:08:54:50] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-02 08:54:50,442:INFO:[02/May/2024:08:54:50] ENGINE Bus STOPPED
+2024-05-02 08:54:50,442:INFO:[02/May/2024:08:54:50] ENGINE Bus EXITING
+2024-05-02 08:54:50,442:INFO:[02/May/2024:08:54:50] ENGINE Bus EXITED
+2024-05-02 08:54:50,454:INFO:[02/May/2024:08:54:50] ENGINE Waiting for child threads to terminate...
+2024-05-02 08:54:50,454:INFO:[02/May/2024:08:54:50] ENGINE Re-spawning C:\Program Files\Python312\python.exe C:\Users\71521\Desktop\Eval\PackageMeasurementConversionAPI\main.py
+2024-05-02 08:54:50,920:INFO:[02/May/2024:08:54:50] ENGINE Bus STARTING
+2024-05-02 08:54:50,921:INFO:[02/May/2024:08:54:50] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 08:54:51,141:INFO:[02/May/2024:08:54:51] ENGINE Serving on http://0.0.0.0:8080
+2024-05-02 08:54:51,142:INFO:[02/May/2024:08:54:51] ENGINE Bus STARTED
+2024-05-02 08:55:20,251:INFO:[02/May/2024:08:55:20] ENGINE Restarting because C:\Users\71521\Desktop\Eval\PackageMeasurementConversionAPI\controller\controller.py changed.
+2024-05-02 08:55:20,251:INFO:[02/May/2024:08:55:20] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 08:55:20,251:INFO:[02/May/2024:08:55:20] ENGINE Bus STOPPING
+2024-05-02 08:55:20,419:INFO:[02/May/2024:08:55:20] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-02 08:55:20,419:INFO:[02/May/2024:08:55:20] ENGINE Bus STOPPED
+2024-05-02 08:55:20,420:INFO:[02/May/2024:08:55:20] ENGINE Bus EXITING
+2024-05-02 08:55:20,421:INFO:[02/May/2024:08:55:20] ENGINE Bus EXITED
+2024-05-02 08:55:20,508:INFO:[02/May/2024:08:55:20] ENGINE Waiting for child threads to terminate...
+2024-05-02 08:55:20,508:INFO:[02/May/2024:08:55:20] ENGINE Re-spawning C:\Program Files\Python312\python.exe C:\Users\71521\Desktop\Eval\PackageMeasurementConversionAPI\main.py
+2024-05-02 08:55:20,993:INFO:[02/May/2024:08:55:20] ENGINE Bus STARTING
+2024-05-02 08:55:20,994:INFO:[02/May/2024:08:55:20] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 08:55:21,225:INFO:[02/May/2024:08:55:21] ENGINE Serving on http://0.0.0.0:8080
+2024-05-02 08:55:21,225:INFO:[02/May/2024:08:55:21] ENGINE Bus STARTED
+2024-05-02 08:55:34,114:INFO:[02/May/2024:08:55:34] ENGINE Restarting because C:\Users\71521\Desktop\Eval\PackageMeasurementConversionAPI\controller\controller.py changed.
+2024-05-02 08:55:34,114:INFO:[02/May/2024:08:55:34] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 08:55:34,115:INFO:[02/May/2024:08:55:34] ENGINE Bus STOPPING
+2024-05-02 08:55:34,258:INFO:[02/May/2024:08:55:34] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-02 08:55:34,258:INFO:[02/May/2024:08:55:34] ENGINE Bus STOPPED
+2024-05-02 08:55:34,258:INFO:[02/May/2024:08:55:34] ENGINE Bus EXITING
+2024-05-02 08:55:34,258:INFO:[02/May/2024:08:55:34] ENGINE Bus EXITED
+2024-05-02 08:55:34,290:INFO:[02/May/2024:08:55:34] ENGINE Waiting for child threads to terminate...
+2024-05-02 08:55:34,290:INFO:[02/May/2024:08:55:34] ENGINE Re-spawning C:\Program Files\Python312\python.exe C:\Users\71521\Desktop\Eval\PackageMeasurementConversionAPI\main.py
+2024-05-02 08:55:34,736:INFO:[02/May/2024:08:55:34] ENGINE Bus STARTING
+2024-05-02 08:55:34,737:INFO:[02/May/2024:08:55:34] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 08:55:34,976:INFO:[02/May/2024:08:55:34] ENGINE Serving on http://0.0.0.0:8080
+2024-05-02 08:55:34,976:INFO:[02/May/2024:08:55:34] ENGINE Bus STARTED
+2024-05-02 08:56:48,552:INFO:[02/May/2024:08:56:48] ENGINE Restarting because C:\Users\71521\Desktop\Eval\PackageMeasurementConversionAPI\controller\controller.py changed.
+2024-05-02 08:56:48,552:INFO:[02/May/2024:08:56:48] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 08:56:48,552:INFO:[02/May/2024:08:56:48] ENGINE Bus STOPPING
+2024-05-02 08:56:48,715:INFO:[02/May/2024:08:56:48] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-02 08:56:48,715:INFO:[02/May/2024:08:56:48] ENGINE Bus STOPPED
+2024-05-02 08:56:48,715:INFO:[02/May/2024:08:56:48] ENGINE Bus EXITING
+2024-05-02 08:56:48,715:INFO:[02/May/2024:08:56:48] ENGINE Bus EXITED
+2024-05-02 08:56:48,788:INFO:[02/May/2024:08:56:48] ENGINE Waiting for child threads to terminate...
+2024-05-02 08:56:48,789:INFO:[02/May/2024:08:56:48] ENGINE Re-spawning C:\Program Files\Python312\python.exe C:\Users\71521\Desktop\Eval\PackageMeasurementConversionAPI\main.py
+2024-05-02 08:56:49,512:INFO:[02/May/2024:08:56:49] ENGINE Bus STARTING
+2024-05-02 08:56:49,513:INFO:[02/May/2024:08:56:49] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 08:56:49,724:INFO:[02/May/2024:08:56:49] ENGINE Serving on http://0.0.0.0:8080
+2024-05-02 08:56:49,724:INFO:[02/May/2024:08:56:49] ENGINE Bus STARTED
+2024-05-02 09:02:33,971:INFO:[02/May/2024:09:02:33] ENGINE Bus STARTING
+2024-05-02 09:02:33,971:INFO:[02/May/2024:09:02:33] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 09:02:34,138:INFO:[02/May/2024:09:02:34] ENGINE Restarting because C:\Users\71521\Desktop\Eval\PackageMeasurementConversionAPI\services\converter.py changed.
+2024-05-02 09:02:34,139:INFO:[02/May/2024:09:02:34] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 09:02:34,139:INFO:[02/May/2024:09:02:34] ENGINE Bus STOPPING
+2024-05-02 09:02:34,301:INFO:[02/May/2024:09:02:34] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-02 09:02:34,301:INFO:[02/May/2024:09:02:34] ENGINE Bus STOPPED
+2024-05-02 09:02:34,301:INFO:[02/May/2024:09:02:34] ENGINE Bus EXITING
+2024-05-02 09:02:34,302:INFO:[02/May/2024:09:02:34] ENGINE Bus EXITED
+2024-05-02 09:02:34,326:INFO:[02/May/2024:09:02:34] ENGINE Waiting for child threads to terminate...
+2024-05-02 09:02:34,326:INFO:[02/May/2024:09:02:34] ENGINE Re-spawning C:\Program Files\Python312\python.exe C:\Users\71521\Desktop\Eval\PackageMeasurementConversionAPI\main.py
+2024-05-02 09:02:34,495:INFO:[02/May/2024:09:02:34] ENGINE Serving on http://0.0.0.0:8080
+2024-05-02 09:02:34,495:INFO:[02/May/2024:09:02:34] ENGINE Bus STARTED
+2024-05-02 09:02:34,769:INFO:[02/May/2024:09:02:34] ENGINE Bus STARTING
+2024-05-02 09:02:34,770:INFO:[02/May/2024:09:02:34] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 09:02:35,945:ERROR:[02/May/2024:09:02:35] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x0000018312964470>>
+Traceback (most recent call last):
+  File "C:\Users\71521\AppData\Roaming\Python\Python312\site-packages\portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "C:\Users\71521\AppData\Roaming\Python\Python312\site-packages\portend.py", line 71, in assert_free
+    list(itertools.starmap(self._connect, info))
+  File "C:\Users\71521\AppData\Roaming\Python\Python312\site-packages\portend.py", line 87, in _connect
+    raise PortNotFree(tmpl.format(**locals()))
+portend.PortNotFree: Port 8080 is in use on 127.0.0.1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71521\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71521\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Users\71521\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Users\71521\AppData\Roaming\Python\Python312\site-packages\portend.py", line 126, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 0.0.0.0.
+
+2024-05-02 09:02:35,945:ERROR:[02/May/2024:09:02:35] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Users\71521\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Users\71521\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 0.0.0.0.')
+
+2024-05-02 09:02:35,945:INFO:[02/May/2024:09:02:35] ENGINE Bus STOPPING
+2024-05-02 09:02:35,946:INFO:[02/May/2024:09:02:35] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) already shut down
+2024-05-02 09:02:35,946:INFO:[02/May/2024:09:02:35] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 09:02:35,946:INFO:[02/May/2024:09:02:35] ENGINE Bus STOPPED
+2024-05-02 09:02:35,946:INFO:[02/May/2024:09:02:35] ENGINE Bus EXITING
+2024-05-02 09:02:35,946:INFO:[02/May/2024:09:02:35] ENGINE Bus EXITED
+2024-05-02 09:02:39,835:INFO:127.0.0.1 - - [02/May/2024:09:02:39] "GET /convert_measurements?input=aa HTTP/1.1" 200 51 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 09:02:43,140:INFO:127.0.0.1 - - [02/May/2024:09:02:43] "GET /convert_measurements?input=aaa HTTP/1.1" 200 54 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 09:04:10,062:INFO:[02/May/2024:09:04:10] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-02 09:04:10,063:INFO:[02/May/2024:09:04:10] ENGINE Bus STOPPING
+2024-05-02 09:04:10,256:INFO:[02/May/2024:09:04:10] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-02 09:04:10,256:INFO:[02/May/2024:09:04:10] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 09:04:10,256:INFO:[02/May/2024:09:04:10] ENGINE Bus STOPPED
+2024-05-02 09:04:10,257:INFO:[02/May/2024:09:04:10] ENGINE Bus EXITING
+2024-05-02 09:04:10,257:INFO:[02/May/2024:09:04:10] ENGINE Bus EXITED
+2024-05-02 09:04:10,257:INFO:[02/May/2024:09:04:10] ENGINE Waiting for child threads to terminate...
+2024-05-02 09:51:36,429:INFO:[02/May/2024:09:51:36] ENGINE Bus STARTING
+2024-05-02 09:51:36,429:INFO:[02/May/2024:09:51:36] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 09:51:36,649:INFO:[02/May/2024:09:51:36] ENGINE Serving on http://0.0.0.0:8080
+2024-05-02 09:51:36,650:INFO:[02/May/2024:09:51:36] ENGINE Bus STARTED
+2024-05-02 09:51:41,888:INFO:127.0.0.1 - - [02/May/2024:09:51:41] "GET /convert_measurements?input=aaa HTTP/1.1" 200 50 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 09:51:44,032:INFO:127.0.0.1 - - [02/May/2024:09:51:44] "GET /convert_measurements?input=aa HTTP/1.1" 200 51 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 09:52:54,998:INFO:[02/May/2024:09:52:54] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-02 09:52:54,999:INFO:[02/May/2024:09:52:54] ENGINE Bus STOPPING
+2024-05-02 09:52:55,151:INFO:[02/May/2024:09:52:55] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-02 09:52:55,151:INFO:[02/May/2024:09:52:55] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 09:52:55,152:INFO:[02/May/2024:09:52:55] ENGINE Bus STOPPED
+2024-05-02 09:52:55,152:INFO:[02/May/2024:09:52:55] ENGINE Bus EXITING
+2024-05-02 09:52:55,152:INFO:[02/May/2024:09:52:55] ENGINE Bus EXITED
+2024-05-02 09:52:55,152:INFO:[02/May/2024:09:52:55] ENGINE Waiting for child threads to terminate...
