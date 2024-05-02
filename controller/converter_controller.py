@@ -5,6 +5,7 @@ from services.package_converter import PackageConverter
 from utilis.db_operator import PackageMeasurementHistory
 from models.sequence import Sequence
 
+
 class ConverterAPI:
     def __init__(self):
         self.converter = PackageConverter()
@@ -27,21 +28,17 @@ class ConverterAPI:
             time = datetime.now()
             if measurement != "Invalid":
                 # Assuming no error message or response for now
-                error_message = None
                 response = "Measurements saved successfully"
-
                 sequence = Sequence(input_string, measurement, time, response)
                 self.sequence_history.save_curr_seq(sequence)
-                return measurement
-
+                return {"status": "success", "err_msg": "", "result": measurement}
             else:
-                error_message = "Invalid input"
+                error_message = "invalid sequence"
                 response = "cant convert measurement input string"
-                measurement = None
-
+                measurement = []
                 sequence = Sequence(input_string, measurement, time, response)
                 self.sequence_history.save_curr_seq(sequence)
-                return "{}, {}".format(error_message, response)
+                return {"status": "fail", "err_msg": error_message, "result": measurement}
 
         except Exception as e:
             cherrypy.response.status = 500
@@ -49,7 +46,7 @@ class ConverterAPI:
             response = 500
             sequence = Sequence(input_string, measurement=None, time=time, response=response)
             self.sequence_history.save_curr_seq(sequence)
-            return {"status": "error", "data": None, "error": str(e)}
+            return {"status": "error", "err_msg": error_message, "result": None}
 
     @cherrypy.expose
     @cherrypy.tools.json_out()
@@ -63,5 +60,6 @@ class ConverterAPI:
             return history
         except Exception as e:
             cherrypy.response.status = 500  # Internal Server Error
-            return {"status": "error", "data": None, "error": str(e)}
+            return {"status": "error", "err_msg": str(e), "result": None}
+
 
