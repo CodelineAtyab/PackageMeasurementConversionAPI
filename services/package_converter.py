@@ -15,6 +15,8 @@ class PackageConverter:
         for i in lst:
             if i != 26:
                 return count
+            elif i == "invalid":
+                return "invalid"
             count += 1
 
     def calc(self, lst):
@@ -41,8 +43,10 @@ class PackageConverter:
         """
         if char == '_':
             return 0
-        else:
+        elif char.lower() in string.ascii_lowercase:
             return string.ascii_lowercase.index(char.lower()) + 1
+        else:
+            return "invalid"
 
     def process_list(self, lst):
         """
@@ -52,6 +56,7 @@ class PackageConverter:
         """
         i = 0
         while i < len(lst):
+
             if lst[i] == 26:
                 if i < len(lst) - 1:
                     new_num = self.search(lst[i:])
@@ -62,6 +67,8 @@ class PackageConverter:
                     i += 1
                 else:
                     return "Invalid"
+            elif lst[i] == "invalid":
+                return "Invalid"
             else:
                 i += 1
         return lst
@@ -73,6 +80,7 @@ class PackageConverter:
         :return: a list of the measurements calculated from the input string
         """
         package_list = [self.convert_char_to_conversion(char) for char in input_string]
+
         list_to_measure = self.process_list(package_list)
         measurements = []
         if list_to_measure == "Invalid":
@@ -95,8 +103,8 @@ class PackageConverter:
 
 
 # # # Test the function
-# converter = PackageConverter()
-# converter.package_measurement_conversion("aa") # [1]
+converter = PackageConverter()
+print(converter.package_measurement_conversion("@@@")) # [1]
 # converter.package_measurement_conversion("__") # [0]
 # converter.package_measurement_conversion("a_") # [0]
 # converter.package_measurement_conversion("abz") # invalid
