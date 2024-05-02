@@ -38,9 +38,9 @@ class Measurements(object):
         is_a_step = True  # First character/number = step one.
         step_count_remaining = 0  # Set the count as soon as the number is encountered.
         curr_input_sum = 0  # continue adding the values until remaining step count != 0
-        i = 0
+        # i = 0
         for curr_num in list_of_num:
-            i += 1
+            # i += 1
             if is_a_step:
                 if curr_num == 26:  # Check if current character is Z count
                     step_count_remaining += curr_num
@@ -62,7 +62,7 @@ class Measurements(object):
                 curr_input_sum = 0
                 step_count_remaining = 0
                 is_a_step = True
-            elif step_count_remaining > (len(list_of_num) - 1) - i:
-                result_input_list = []
+            # elif step_count_remaining > (len(list_of_num) - 1) - i:
+            #     result_input_list = []
 
         return result_input_list
