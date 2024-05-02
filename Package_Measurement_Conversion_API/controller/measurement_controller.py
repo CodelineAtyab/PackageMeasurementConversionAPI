@@ -53,4 +53,3 @@ class MeasurementService(object):
         except Exception as e:
             logging.error(f"Failed to process conversion results: {str(e)}")
             return {"status": "fail", "err_msg": str(e), "result": []}
-
