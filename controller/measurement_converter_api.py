@@ -1,4 +1,5 @@
 import cherrypy
+import json
 from services.measurement_converter import MeasurementConverter
 from utils.measurement_converter_db import MeasurementConverterDB
 from models.measurement_history import MeasurementHistory
@@ -16,14 +17,16 @@ class MeasurementConverterAPI(object):
         db_entry.input = input_str
         try:
             if input_str is None:
-                    raise cherrypy.HTTPError(400, "Missing input parameter")
+                raise cherrypy.HTTPError(400, "Missing input parameter")
             db_entry.output = MeasurementConverter().package_measurement_converter(input_str)
             MeasurementConverterDB().save_to_history(db_entry.input, db_entry.output)
+            error_msg = "Invalid string input" if db_entry.output == "Invalid string input" else ""
+            status = "SUCCESS" if error_msg == "" else "FAIL"
+            result = db_entry.output if error_msg == "" else []
+            return {"status": status, "error_msg": error_msg, "result": result}
         except Exception as e:
-            raise cherrypy.HTTPError(400, str(e))
-        
-        return db_entry.output
-        
+            return {"status": "FAIL", "error_msg": str(e), "result": []}
+            
     @cherrypy.expose
     @cherrypy.tools.json_out()
     def get_history(self):
