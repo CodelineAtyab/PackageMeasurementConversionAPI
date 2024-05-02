@@ -6,7 +6,7 @@ from controller.controller import ConverterAPI
 
 def setup_logging():
     logging.basicConfig(
-        filename='utilis/error_log.log',
+        filename='utilities/error_log.log',
         level=logging.CRITICAL,
         format='%(asctime)s:%(levelname)s:%(message)s'
     )

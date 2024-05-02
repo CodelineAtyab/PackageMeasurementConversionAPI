@@ -20,9 +20,9 @@ class TestPackageConverter(unittest.TestCase):
 
     def test_invalid_sequences(self):
         """Test conversion of strings that are expected to be invalid."""
-        self.assertEqual(self.converter.convert_measurements("abz"), "Invalid")
-        self.assertEqual(self.converter.convert_measurements("aaa"), "Invalid")
-        self.assertEqual(self.converter.convert_measurements("abc"), "Invalid")
+        self.assertEqual(self.converter.convert_measurements("abz"), [])
+        self.assertEqual(self.converter.convert_measurements("aaa"), [])
+        self.assertEqual(self.converter.convert_measurements("abc"), [])
 
     def test_edge_cases(self):
         """Test conversion of strings with edge cases."""

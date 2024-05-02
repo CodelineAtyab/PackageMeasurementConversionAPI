@@ -3,6 +3,7 @@ import logging
 from models.sequence import Sequence
 import json
 
+
 class PackageMeasurementHistory:
     def __init__(self, db_path: str):
         self.db_path = db_path

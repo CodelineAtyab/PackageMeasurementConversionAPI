@@ -5,10 +5,11 @@ from services.converter import PackageConverter
 from utilities.db import PackageMeasurementHistory
 from models.sequence import Sequence
 
+
 class ConverterAPI:
     def __init__(self):
         self.converter = PackageConverter()
-        self.sequence_history = PackageMeasurementHistory('./utilis/converter.db')
+        self.sequence_history = PackageMeasurementHistory('./utilities/converter.db')
 
     @cherrypy.expose
     @cherrypy.tools.json_out()
@@ -25,11 +26,11 @@ class ConverterAPI:
             self.sequence_history.save_curr_seq(sequence)  # Ensure this method accepts a Sequence object
 
             return {"status": "success" if measurement != "Invalid" else "fail",
-                    "data": measurement if measurement != "Invalid" else None,
-                    "error": None if measurement != "Invalid" else "Invalid input"}
+                    "err_msg": "",
+                    "result": measurement if measurement != "Invalid" else None}
         except Exception as e:
             cherrypy.response.status = 500
-            return {"status": "error", "data": None, "error": str(e)}
+            return {"status": "fail",  "err_msg": str(e), "result": None}
 
     @cherrypy.expose
     @cherrypy.tools.json_out()
@@ -39,7 +40,7 @@ class ConverterAPI:
         """
         try:
             history = self.sequence_history.get_history()
-            return {"status": "success", "data": history, "error": None}
+            return {"status": "success",  "err_msg": "","data": history}
         except Exception as e:
             cherrypy.response.status = 500
-            return {"status": "error", "data": None, "error": str(e)}
+            return {"status": "error",  "err_msg": str(e), "data": None}

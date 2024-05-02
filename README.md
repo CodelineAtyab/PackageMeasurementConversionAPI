@@ -38,9 +38,9 @@ This API is designed to convert measurement input strings into a list of total v
 
 ### Example requests:
 
-    http://localhost:8888/convert_measurements?input_str=abbcc
+    http://localhost:8080/convert_measurements?input=abbcc
 
-    http://localhost:8888/convert_measurements?input_str=aa
+    http://localhost:8080/convert_measurements?input=aa
 
 
 ## Contributing
