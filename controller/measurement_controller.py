@@ -4,6 +4,7 @@ from services.measurement_service import convert_measurements  # Ensure this mod
 import logging
 from db_utils.db_crud_operations import DbCrudOpearations
 from models.processed_result import ProcessResult
+import ast
 
 #DATABASE_NAME = "measurements.db"
 
@@ -24,7 +25,7 @@ class MeasurementAPI:
         processed_result_obj.generated_seq = str(result)
         
         self.storing_history.add_to_history(processed_result_obj)
-        return {"status": "success", "err_msg": "", "result": [processed_result_obj.generated_seq]}
+        return {"status": "success", "err_msg": "", "result": ast.literal_eval(processed_result_obj.generated_seq)}  #To convert a string representation of a list into an actual list in Python, you can use the ast.literal_eval() function from the ast module. this is done for easier testing as tester wants it in a certain format
         #return {"input": processed_result_obj.given_seq, "output": processed_result_obj.generated_seq}
 
     @cherrypy.expose
