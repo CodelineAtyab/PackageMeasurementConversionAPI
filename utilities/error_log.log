@@ -201,3 +201,17 @@ cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 0.0.0.0.
 2024-05-02 09:04:10,257:INFO:[02/May/2024:09:04:10] ENGINE Bus EXITING
 2024-05-02 09:04:10,257:INFO:[02/May/2024:09:04:10] ENGINE Bus EXITED
 2024-05-02 09:04:10,257:INFO:[02/May/2024:09:04:10] ENGINE Waiting for child threads to terminate...
+2024-05-02 09:51:36,429:INFO:[02/May/2024:09:51:36] ENGINE Bus STARTING
+2024-05-02 09:51:36,429:INFO:[02/May/2024:09:51:36] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 09:51:36,649:INFO:[02/May/2024:09:51:36] ENGINE Serving on http://0.0.0.0:8080
+2024-05-02 09:51:36,650:INFO:[02/May/2024:09:51:36] ENGINE Bus STARTED
+2024-05-02 09:51:41,888:INFO:127.0.0.1 - - [02/May/2024:09:51:41] "GET /convert_measurements?input=aaa HTTP/1.1" 200 50 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 09:51:44,032:INFO:127.0.0.1 - - [02/May/2024:09:51:44] "GET /convert_measurements?input=aa HTTP/1.1" 200 51 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+2024-05-02 09:52:54,998:INFO:[02/May/2024:09:52:54] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-02 09:52:54,999:INFO:[02/May/2024:09:52:54] ENGINE Bus STOPPING
+2024-05-02 09:52:55,151:INFO:[02/May/2024:09:52:55] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-02 09:52:55,151:INFO:[02/May/2024:09:52:55] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 09:52:55,152:INFO:[02/May/2024:09:52:55] ENGINE Bus STOPPED
+2024-05-02 09:52:55,152:INFO:[02/May/2024:09:52:55] ENGINE Bus EXITING
+2024-05-02 09:52:55,152:INFO:[02/May/2024:09:52:55] ENGINE Bus EXITED
+2024-05-02 09:52:55,152:INFO:[02/May/2024:09:52:55] ENGINE Waiting for child threads to terminate...
