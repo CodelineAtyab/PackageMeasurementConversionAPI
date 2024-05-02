@@ -1,0 +1,252 @@
+2024-05-01 10:45:50,257:INFO:[01/May/2024:10:45:50] ENGINE Listening for SIGTERM.
+2024-05-01 10:45:50,257:INFO:[01/May/2024:10:45:50] ENGINE Bus STARTING
+2024-05-01 10:45:50,257:INFO:[01/May/2024:10:45:50] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:45:50,491:INFO:[01/May/2024:10:45:50] ENGINE Serving on http://127.0.0.1:8080
+2024-05-01 10:45:50,491:INFO:[01/May/2024:10:45:50] ENGINE Bus STARTED
+2024-05-01 10:45:55,758:INFO:127.0.0.1 - - [01/May/2024:10:45:55] "GET /conversion_results?input_string=abbcc HTTP/1.1" 200 6 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:46:10,457:INFO:[01/May/2024:10:46:10] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:46:10,464:INFO:[01/May/2024:10:46:10] ENGINE Bus STOPPING
+2024-05-01 10:46:10,607:INFO:[01/May/2024:10:46:10] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+2024-05-01 10:46:10,607:INFO:[01/May/2024:10:46:10] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:46:10,607:INFO:[01/May/2024:10:46:10] ENGINE Bus STOPPED
+2024-05-01 10:46:10,607:INFO:[01/May/2024:10:46:10] ENGINE Bus EXITING
+2024-05-01 10:46:10,607:INFO:[01/May/2024:10:46:10] ENGINE Bus EXITED
+2024-05-01 10:46:10,607:INFO:[01/May/2024:10:46:10] ENGINE Waiting for child threads to terminate...
+2024-05-01 10:48:21,501:INFO:[01/May/2024:10:48:21] ENGINE Listening for SIGTERM.
+2024-05-01 10:48:21,501:INFO:[01/May/2024:10:48:21] ENGINE Bus STARTING
+2024-05-01 10:48:21,502:INFO:[01/May/2024:10:48:21] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-01 10:48:21,736:INFO:[01/May/2024:10:48:21] ENGINE Serving on http://127.0.0.1:8080
+2024-05-01 10:48:21,736:INFO:[01/May/2024:10:48:21] ENGINE Bus STARTED
+2024-05-01 10:48:26,933:INFO:127.0.0.1 - - [01/May/2024:10:48:26] "GET /conversion_results?input_string=abbcc HTTP/1.1" 200 6 "" "PostmanRuntime/7.37.3"
+2024-05-01 10:52:19,637:INFO:[01/May/2024:10:52:19] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-01 10:52:19,637:INFO:[01/May/2024:10:52:19] ENGINE Bus STOPPING
+2024-05-01 10:52:19,820:INFO:[01/May/2024:10:52:19] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+2024-05-01 10:52:19,820:INFO:[01/May/2024:10:52:19] ENGINE Stopped thread 'Autoreloader'.
+2024-05-01 10:52:19,820:INFO:[01/May/2024:10:52:19] ENGINE Bus STOPPED
+2024-05-01 10:52:19,821:INFO:[01/May/2024:10:52:19] ENGINE Bus EXITING
+2024-05-01 10:52:19,821:INFO:[01/May/2024:10:52:19] ENGINE Bus EXITED
+2024-05-01 10:52:19,821:INFO:[01/May/2024:10:52:19] ENGINE Waiting for child threads to terminate...
+2024-05-02 08:56:40,484:INFO:[02/May/2024:08:56:40] ENGINE Listening for SIGTERM.
+2024-05-02 08:56:40,485:INFO:[02/May/2024:08:56:40] ENGINE Bus STARTING
+2024-05-02 08:56:40,486:INFO:[02/May/2024:08:56:40] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 08:56:40,705:INFO:[02/May/2024:08:56:40] ENGINE Serving on http://127.0.0.1:8080
+2024-05-02 08:56:40,705:INFO:[02/May/2024:08:56:40] ENGINE Bus STARTED
+2024-05-02 08:56:46,358:INFO:127.0.0.1 - - [02/May/2024:08:56:46] "GET /conversion_results?input_string=abbcc HTTP/1.1" 200 105 "" "PostmanRuntime/7.37.3"
+2024-05-02 08:57:00,053:INFO:[02/May/2024:08:57:00] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-02 08:57:00,053:INFO:[02/May/2024:08:57:00] ENGINE Bus STOPPING
+2024-05-02 08:57:00,207:INFO:[02/May/2024:08:57:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+2024-05-02 08:57:00,208:INFO:[02/May/2024:08:57:00] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 08:57:00,208:INFO:[02/May/2024:08:57:00] ENGINE Bus STOPPED
+2024-05-02 08:57:00,208:INFO:[02/May/2024:08:57:00] ENGINE Bus EXITING
+2024-05-02 08:57:00,208:INFO:[02/May/2024:08:57:00] ENGINE Bus EXITED
+2024-05-02 08:57:00,208:INFO:[02/May/2024:08:57:00] ENGINE Waiting for child threads to terminate...
+2024-05-02 08:57:29,296:INFO:[02/May/2024:08:57:29] ENGINE Listening for SIGTERM.
+2024-05-02 08:57:29,296:INFO:[02/May/2024:08:57:29] ENGINE Bus STARTING
+2024-05-02 08:57:29,298:INFO:[02/May/2024:08:57:29] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 08:57:29,524:INFO:[02/May/2024:08:57:29] ENGINE Serving on http://127.0.0.1:8080
+2024-05-02 08:57:29,524:INFO:[02/May/2024:08:57:29] ENGINE Bus STARTED
+2024-05-02 08:57:32,810:INFO:127.0.0.1 - - [02/May/2024:08:57:32] "GET /conversion_results?input_string=abbcc HTTP/1.1" 200 54 "" "PostmanRuntime/7.37.3"
+2024-05-02 08:59:15,892:INFO:[02/May/2024:08:59:15] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-02 08:59:15,892:INFO:[02/May/2024:08:59:15] ENGINE Bus STOPPING
+2024-05-02 08:59:16,029:INFO:[02/May/2024:08:59:16] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+2024-05-02 08:59:16,029:INFO:[02/May/2024:08:59:16] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 08:59:16,029:INFO:[02/May/2024:08:59:16] ENGINE Bus STOPPED
+2024-05-02 08:59:16,029:INFO:[02/May/2024:08:59:16] ENGINE Bus EXITING
+2024-05-02 08:59:16,029:INFO:[02/May/2024:08:59:16] ENGINE Bus EXITED
+2024-05-02 08:59:16,029:INFO:[02/May/2024:08:59:16] ENGINE Waiting for child threads to terminate...
+2024-05-02 09:15:13,242:INFO:[02/May/2024:09:15:13] ENGINE Listening for SIGTERM.
+2024-05-02 09:15:13,242:INFO:[02/May/2024:09:15:13] ENGINE Bus STARTING
+2024-05-02 09:15:13,244:INFO:[02/May/2024:09:15:13] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 09:15:13,458:INFO:[02/May/2024:09:15:13] ENGINE Serving on http://127.0.0.1:8080
+2024-05-02 09:15:13,459:INFO:[02/May/2024:09:15:13] ENGINE Bus STARTED
+2024-05-02 09:15:21,563:INFO:127.0.0.1 - - [02/May/2024:09:15:21] "GET /conversion_results?input_string=aaa HTTP/1.1" 200 51 "" "PostmanRuntime/7.37.3"
+2024-05-02 09:15:32,386:INFO:127.0.0.1 - - [02/May/2024:09:15:32] "GET /conversion_results?input_string=ccc HTTP/1.1" 200 50 "" "PostmanRuntime/7.37.3"
+2024-05-02 09:15:38,316:INFO:[02/May/2024:09:15:38] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-02 09:15:38,316:INFO:[02/May/2024:09:15:38] ENGINE Bus STOPPING
+2024-05-02 09:15:38,442:INFO:[02/May/2024:09:15:38] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+2024-05-02 09:15:38,442:INFO:[02/May/2024:09:15:38] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 09:15:38,442:INFO:[02/May/2024:09:15:38] ENGINE Bus STOPPED
+2024-05-02 09:15:38,442:INFO:[02/May/2024:09:15:38] ENGINE Bus EXITING
+2024-05-02 09:15:38,442:INFO:[02/May/2024:09:15:38] ENGINE Bus EXITED
+2024-05-02 09:15:38,442:INFO:[02/May/2024:09:15:38] ENGINE Waiting for child threads to terminate...
+2024-05-02 09:16:27,257:INFO:[02/May/2024:09:16:27] ENGINE Listening for SIGTERM.
+2024-05-02 09:16:27,257:INFO:[02/May/2024:09:16:27] ENGINE Bus STARTING
+2024-05-02 09:16:27,257:INFO:[02/May/2024:09:16:27] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 09:16:27,472:INFO:[02/May/2024:09:16:27] ENGINE Serving on http://127.0.0.1:8080
+2024-05-02 09:16:27,472:INFO:[02/May/2024:09:16:27] ENGINE Bus STARTED
+2024-05-02 09:16:35,576:INFO:127.0.0.1 - - [02/May/2024:09:16:35] "GET /conversion_results?input_string=aaa HTTP/1.1" 200 51 "" "PostmanRuntime/7.37.3"
+2024-05-02 09:21:06,348:INFO:[02/May/2024:09:21:06] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-02 09:21:06,348:INFO:[02/May/2024:09:21:06] ENGINE Bus STOPPING
+2024-05-02 09:21:06,487:INFO:[02/May/2024:09:21:06] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+2024-05-02 09:21:06,487:INFO:[02/May/2024:09:21:06] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 09:21:06,487:INFO:[02/May/2024:09:21:06] ENGINE Bus STOPPED
+2024-05-02 09:21:06,487:INFO:[02/May/2024:09:21:06] ENGINE Bus EXITING
+2024-05-02 09:21:06,487:INFO:[02/May/2024:09:21:06] ENGINE Bus EXITED
+2024-05-02 09:21:06,487:INFO:[02/May/2024:09:21:06] ENGINE Waiting for child threads to terminate...
+2024-05-02 09:52:03,005:INFO:[02/May/2024:09:52:03] ENGINE Listening for SIGTERM.
+2024-05-02 09:52:03,005:INFO:[02/May/2024:09:52:03] ENGINE Bus STARTING
+2024-05-02 09:52:03,005:INFO:[02/May/2024:09:52:03] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 09:52:03,232:INFO:[02/May/2024:09:52:03] ENGINE Serving on http://127.0.0.1:8080
+2024-05-02 09:52:03,232:INFO:[02/May/2024:09:52:03] ENGINE Bus STARTED
+2024-05-02 09:52:52,484:INFO:127.0.0.1 - - [02/May/2024:09:52:52] "GET /conversion_results?input_string=aaa HTTP/1.1" 200 50 "" "PostmanRuntime/7.37.3"
+2024-05-02 09:52:55,695:INFO:127.0.0.1 - - [02/May/2024:09:52:55] "GET /conversion_results?input_string=aa HTTP/1.1" 200 51 "" "PostmanRuntime/7.37.3"
+2024-05-02 09:55:18,666:INFO:[02/May/2024:09:55:18] ENGINE Keyboard Interrupt: shutting down bus
+2024-05-02 09:55:18,666:INFO:[02/May/2024:09:55:18] ENGINE Bus STOPPING
+2024-05-02 09:55:18,786:INFO:[02/May/2024:09:55:18] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+2024-05-02 09:55:18,786:INFO:[02/May/2024:09:55:18] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 09:55:18,786:INFO:[02/May/2024:09:55:18] ENGINE Bus STOPPED
+2024-05-02 09:55:18,786:INFO:[02/May/2024:09:55:18] ENGINE Bus EXITING
+2024-05-02 09:55:18,786:INFO:[02/May/2024:09:55:18] ENGINE Bus EXITED
+2024-05-02 09:55:18,786:INFO:[02/May/2024:09:55:18] ENGINE Waiting for child threads to terminate...
+2024-05-02 09:55:19,770:INFO:[02/May/2024:09:55:19] ENGINE Listening for SIGTERM.
+2024-05-02 09:55:19,770:INFO:[02/May/2024:09:55:19] ENGINE Bus STARTING
+2024-05-02 09:55:19,771:INFO:[02/May/2024:09:55:19] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 09:55:19,991:INFO:[02/May/2024:09:55:19] ENGINE Serving on http://0.0.0.0:8080
+2024-05-02 09:55:19,991:INFO:[02/May/2024:09:55:19] ENGINE Bus STARTED
+2024-05-02 09:55:23,093:INFO:192.168.137.1 - - [02/May/2024:09:55:23] "GET / HTTP/1.1" 404 1518 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2024-05-02 09:55:23,277:INFO:192.168.137.1 - - [02/May/2024:09:55:23] "GET /favicon.ico HTTP/1.1" 200 1406 "http://192.168.137.86:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2024-05-02 09:55:51,855:INFO:192.168.137.1 - - [02/May/2024:09:55:51] "GET /conversion_results?input_string=aa HTTP/1.1" 200 51 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2024-05-02 09:56:50,085:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=aa HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,102:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=abbcc HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,116:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=dz_a_aazzaaa HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,132:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=a_ HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,145:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=abcdabcdab HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,156:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=abcdabcdab_ HTTP/1.1" 200 60 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,168:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=zdaaaaaaaabaaaaaaaabaaaaaaaabbaa HTTP/1.1" 200 52 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,178:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=zza_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_ HTTP/1.1" 200 52 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,230:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=za_a_a_a_a_a_a_a_a_a_a_a_a_azaaa HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,312:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=_ HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,325:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=_ad HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,344:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=a_ HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,380:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=_zzzb HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,392:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=__ HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,406:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=+++ HTTP/1.1" 200 50 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,443:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=%40%40%40 HTTP/1.1" 200 50 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,493:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=1234 HTTP/1.1" 200 50 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,514:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=aaa HTTP/1.1" 200 50 "" "python-requests/2.31.0"
+2024-05-02 09:56:50,526:INFO:192.168.137.1 - - [02/May/2024:09:56:50] "GET /conversion_results?input_string=ccc HTTP/1.1" 200 50 "" "python-requests/2.31.0"
+2024-05-02 09:58:34,143:INFO:192.168.137.86 - - [02/May/2024:09:58:34] "GET /conversion_results?input_string=bbcc HTTP/1.1" 200 50 "" "PostmanRuntime/7.37.3"
+2024-05-02 09:58:37,152:INFO:192.168.137.86 - - [02/May/2024:09:58:37] "GET /conversion_results?input_string=abbcc HTTP/1.1" 200 51 "" "PostmanRuntime/7.37.3"
+2024-05-02 09:59:12,668:INFO:[02/May/2024:09:59:12] ENGINE Restarting because C:\Users\71538\Documents\PackageMeasurementConversionAPI\Package_Measurement_Conversion_API\services\converter.py changed.
+2024-05-02 09:59:12,669:INFO:[02/May/2024:09:59:12] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 09:59:12,669:INFO:[02/May/2024:09:59:12] ENGINE Bus STOPPING
+2024-05-02 09:59:12,810:INFO:[02/May/2024:09:59:12] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+2024-05-02 09:59:12,810:INFO:[02/May/2024:09:59:12] ENGINE Bus STOPPED
+2024-05-02 09:59:12,811:INFO:[02/May/2024:09:59:12] ENGINE Bus EXITING
+2024-05-02 09:59:12,811:INFO:[02/May/2024:09:59:12] ENGINE Bus EXITED
+2024-05-02 09:59:12,899:INFO:[02/May/2024:09:59:12] ENGINE Waiting for child threads to terminate...
+2024-05-02 09:59:12,899:INFO:[02/May/2024:09:59:12] ENGINE Re-spawning C:\Users\71538\AppData\Local\Programs\Python\Python312\python.exe C:\Users\71538\Documents\PackageMeasurementConversionAPI\main_app.py
+2024-05-02 09:59:13,383:INFO:[02/May/2024:09:59:13] ENGINE Listening for SIGTERM.
+2024-05-02 09:59:13,405:INFO:[02/May/2024:09:59:13] ENGINE Bus STARTING
+2024-05-02 09:59:13,405:INFO:[02/May/2024:09:59:13] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 09:59:13,638:INFO:[02/May/2024:09:59:13] ENGINE Serving on http://0.0.0.0:8080
+2024-05-02 09:59:13,638:INFO:[02/May/2024:09:59:13] ENGINE Bus STARTED
+2024-05-02 09:59:17,768:INFO:[02/May/2024:09:59:17] ENGINE Listening for SIGTERM.
+2024-05-02 09:59:17,768:INFO:[02/May/2024:09:59:17] ENGINE Bus STARTING
+2024-05-02 09:59:17,769:INFO:[02/May/2024:09:59:17] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 09:59:18,956:ERROR:[02/May/2024:09:59:18] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x00000299264F1370>>
+Traceback (most recent call last):
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\portend.py", line 71, in assert_free
+    list(itertools.starmap(self._connect, info))
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\portend.py", line 87, in _connect
+    raise PortNotFree(tmpl.format(**locals()))
+portend.PortNotFree: Port 8080 is in use on 127.0.0.1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\portend.py", line 126, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 0.0.0.0.
+
+2024-05-02 09:59:18,957:ERROR:[02/May/2024:09:59:18] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 0.0.0.0.')
+
+2024-05-02 09:59:18,957:INFO:[02/May/2024:09:59:18] ENGINE Bus STOPPING
+2024-05-02 09:59:18,957:INFO:[02/May/2024:09:59:18] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) already shut down
+2024-05-02 09:59:18,957:INFO:[02/May/2024:09:59:18] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 09:59:18,957:INFO:[02/May/2024:09:59:18] ENGINE Bus STOPPED
+2024-05-02 09:59:18,957:INFO:[02/May/2024:09:59:18] ENGINE Bus EXITING
+2024-05-02 09:59:18,957:INFO:[02/May/2024:09:59:18] ENGINE Bus EXITED
+2024-05-02 09:59:20,486:INFO:192.168.137.86 - - [02/May/2024:09:59:20] "GET /conversion_results?input_string=abbcc HTTP/1.1" 200 54 "" "PostmanRuntime/7.37.3"
+2024-05-02 09:59:48,401:INFO:192.168.137.86 - - [02/May/2024:09:59:48] "GET /conversion_results?input_string=dz_a_aazzaaa HTTP/1.1" 200 59 "" "PostmanRuntime/7.37.3"
+2024-05-02 10:00:10,299:INFO:192.168.137.86 - - [02/May/2024:10:00:10] "GET /conversion_results?input_string=abcdabcdab HTTP/1.1" 200 57 "" "PostmanRuntime/7.37.3"
+2024-05-02 10:00:30,686:INFO:192.168.137.86 - - [02/May/2024:10:00:30] "GET /conversion_results?input_string= HTTP/1.1" 200 50 "" "PostmanRuntime/7.37.3"
+2024-05-02 10:00:33,663:INFO:192.168.137.86 - - [02/May/2024:10:00:33] "GET /conversion_results?input_string=__ HTTP/1.1" 200 51 "" "PostmanRuntime/7.37.3"
+2024-05-02 10:00:48,954:INFO:192.168.137.86 - - [02/May/2024:10:00:48] "GET /conversion_results?input_string=@@@ HTTP/1.1" 200 50 "" "PostmanRuntime/7.37.3"
+2024-05-02 10:01:02,267:INFO:192.168.137.86 - - [02/May/2024:10:01:02] "GET /conversion_results?input_string=1234 HTTP/1.1" 200 50 "" "PostmanRuntime/7.37.3"
+2024-05-02 10:01:22,988:INFO:[02/May/2024:10:01:22] ENGINE Listening for SIGTERM.
+2024-05-02 10:01:22,988:INFO:[02/May/2024:10:01:22] ENGINE Bus STARTING
+2024-05-02 10:01:22,988:INFO:[02/May/2024:10:01:22] ENGINE Started monitor thread 'Autoreloader'.
+2024-05-02 10:01:24,011:ERROR:[02/May/2024:10:01:24] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x000001A9A6105970>>
+Traceback (most recent call last):
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\portend.py", line 71, in assert_free
+    list(itertools.starmap(self._connect, info))
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\portend.py", line 87, in _connect
+    raise PortNotFree(tmpl.format(**locals()))
+portend.PortNotFree: Port 8080 is in use on 127.0.0.1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\cherrypy\_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\portend.py", line 126, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 8080 not free on 0.0.0.0.
+
+2024-05-02 10:01:24,012:ERROR:[02/May/2024:10:01:24] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 268, in start
+    self.publish('start')
+  File "C:\Users\71538\AppData\Roaming\Python\Python312\site-packages\cherrypy\process\wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 8080 not free on 0.0.0.0.')
+
+2024-05-02 10:01:24,012:INFO:[02/May/2024:10:01:24] ENGINE Bus STOPPING
+2024-05-02 10:01:24,012:INFO:[02/May/2024:10:01:24] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) already shut down
+2024-05-02 10:01:24,012:INFO:[02/May/2024:10:01:24] ENGINE Stopped thread 'Autoreloader'.
+2024-05-02 10:01:24,012:INFO:[02/May/2024:10:01:24] ENGINE Bus STOPPED
+2024-05-02 10:01:24,012:INFO:[02/May/2024:10:01:24] ENGINE Bus EXITING
+2024-05-02 10:01:24,012:INFO:[02/May/2024:10:01:24] ENGINE Bus EXITED
+2024-05-02 10:01:26,797:INFO:192.168.137.1 - - [02/May/2024:10:01:26] "GET /conversion_results?input_string=aa HTTP/1.1" 200 51 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2024-05-02 10:01:40,614:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=aa HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,631:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=abbcc HTTP/1.1" 200 54 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,647:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=dz_a_aazzaaa HTTP/1.1" 200 59 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,661:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=a_ HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,672:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=abcdabcdab HTTP/1.1" 200 57 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,680:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=abcdabcdab_ HTTP/1.1" 200 60 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,695:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=zdaaaaaaaabaaaaaaaabaaaaaaaabbaa HTTP/1.1" 200 52 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,695:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=zza_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_ HTTP/1.1" 200 52 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,710:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=za_a_a_a_a_a_a_a_a_a_a_a_a_azaaa HTTP/1.1" 200 55 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,738:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=_ HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,742:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=_ad HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,758:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=a_ HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,789:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=_zzzb HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,808:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=__ HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,816:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=+++ HTTP/1.1" 200 50 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,829:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=%40%40%40 HTTP/1.1" 200 50 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,836:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=1234 HTTP/1.1" 200 50 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,852:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=aaa HTTP/1.1" 200 51 "" "python-requests/2.31.0"
+2024-05-02 10:01:40,868:INFO:192.168.137.1 - - [02/May/2024:10:01:40] "GET /conversion_results?input_string=ccc HTTP/1.1" 200 50 "" "python-requests/2.31.0"
