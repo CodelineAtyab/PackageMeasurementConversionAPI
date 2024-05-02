@@ -83,7 +83,10 @@ class SequenceProcessor:
         while i < len(combined_list):
             count = combined_list[i] if i < len(combined_list) else 0
             sum_sequence = 0
-            if count > 0 and i + 1 < len(combined_list):
+            if count + i + 1 > len(combined_list):
+                self.results = []
+                break
+            elif count > 0 and i + 1 < len(combined_list):
                 sum_sequence = sum(combined_list[i + 1:i + 1 + count])
             self.append_result(sum_sequence)
             i += count + 1
@@ -97,7 +100,7 @@ class SequenceProcessor:
 # Example usage
 if __name__ == "__main__":
     test_strings = [
-        'abbcc', 'dz_a_aazzaaa', 'a_', 'abcdabcdab', 'abcdabcdab_',
+        'aaa', 'dz_a_aazzaaa', 'a_', 'abcdabcdab', 'abcdabcdab_',
         'zdaaaaaaaabaaaaaaaabaaaaaaaabbaa',
         'zza_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_',
         'za_a_a_a_a_a_a_a_a_a_a_a_a_azaaa', '_a', '_', '_ad', '_zzzb', '__'

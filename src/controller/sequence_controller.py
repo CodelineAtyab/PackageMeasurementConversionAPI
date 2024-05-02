@@ -13,7 +13,7 @@ class SequenceAPI(object):
 
     @cherrypy.tools.json_out()
     def GET(self, input_string: str = ""):
-        res_msg = {"status": "FAIL", "data": []}
+        res_msg = {"status": "FAIL", "result": []}
         storage_type = "db"
         file_handler = FileHandler(storage_type)
         sequence = SequenceService(storage_type)
@@ -24,13 +24,13 @@ class SequenceAPI(object):
                 processor = SequenceProcessor(string_instance)
                 processed_results = processor.create_result()
 
-                res_msg = {"status": "SUCCESS", "data": processed_results}
+                res_msg = {"status": "SUCCESS", "err_msg": "", "result": processed_results}
                 sequence.input_service(input_string)
 
             else:
                 sequencehistory = SequenceHistoryModel()
                 file_data = [seq.to_dict() for seq in sequencehistory.data]
-                res_msg = {"status": "SUCCESS", "data": file_data}
+                res_msg = {"status": "SUCCESS", "err_msg": "", "result": file_data}
         except Exception as e:
             print(traceback.format_exc(e))
             res_msg = {"status": "fail", "err_msg": "invalid sequence", "result": []}
