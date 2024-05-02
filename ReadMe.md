@@ -44,7 +44,7 @@ Contributions to this project are prohibited due to the course restrictions.
 This project is licensed under the MIT License.
 
 ## Contact
-For any queries, please contact 71528@omantel.om
+For any queries, please contact aaziz9 @ github
 
 ## Acknowledgements
 Project by Abdulaziz Ali Al Badi
