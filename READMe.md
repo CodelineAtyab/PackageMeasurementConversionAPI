@@ -22,19 +22,18 @@ This Measurement Conversion application enables users to input a string of chara
 ## Usage
 - Get a specific string: 
 
-    Default: http://localhost:8080/?user_input=<enter_string_here> 
-    Specific port: http://localhost:<enter_port>/?user_input=<enter_string_here>
+    Default: http://localhost:8080/convert?user_input=<enter_string_here> 
+    Specific port: http://localhost:<enter_port>/convert?user_input=<enter_string_here>
 
 - Get history of all conversions: 
 
     Default: http://localhost:8080/get_history
-
     Specific port: http://localhost:<enter_port>/get_history
 
 ### Running the Program
 - **Script**:
 
-    Default: ```python main.py```
+    Default: ```python main_app.py```
     
     Specific port: ```python main_app.py <enter_port>```
 - **Access URL**: 
